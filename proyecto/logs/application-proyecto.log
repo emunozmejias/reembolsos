@@ -1,0 +1,8 @@
+2021-10-25 00:20:11,284 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s819ms), soft-evicting connections from pool.
+2021-10-25 04:05:13,866 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s750ms), soft-evicting connections from pool.
+2021-10-25 06:20:15,243 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s847ms), soft-evicting connections from pool.
+2021-10-25 06:50:45,158 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s778ms), soft-evicting connections from pool.
+2021-10-25 08:50:46,514 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s700ms), soft-evicting connections from pool.
+2021-10-25 09:20:46,413 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s806ms), soft-evicting connections from pool.
+2021-10-25 11:21:17,682 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s784ms), soft-evicting connections from pool.
+2021-10-25 11:36:17,630 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s835ms), soft-evicting connections from pool.

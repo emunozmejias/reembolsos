@@ -1,0 +1,102 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  application:
+    name: centro
+  profiles: dev
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://des1081.tecnova.cl:5432/apirest?createDatabaseIfNotExist=true
+    username: apirest
+    password: Tatio2019
+    tomcat:
+     initial-size: 2
+     max-active: 4
+     max-idle: 4
+     min-idle: 2
+     max-wait: 20000
+# Spring-Admin    
+  boot:
+    admin:
+      client:
+        url:
+        -   http://elqui.tecnova.cl:9000      
+        username: admin
+        password: admin-password    
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+
+
+---
+spring:
+  application:
+    name: centro
+  profiles: prod
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://algarrobo.tecnova.cl:5432/apirest?createDatabaseIfNotExist=true
+    username: apirest
+    password: Tatio2019
+    tomcat:
+     initial-size: 2
+     max-active: 4
+     max-idle: 4
+     min-idle: 2
+     max-wait: 20000
+# Spring-Admin    
+  boot:
+    admin:
+      client:
+        url:
+        -   http://elqui.tecnova.cl:9000      
+        username: admin
+        password: admin-password    
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+
+---
+# Logger configuration
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"    
+  level:
+    org.springframework: INFO
+    org.hibernate: DEBUG
+  file: logs/application-centro-costo.log
+# Server configuration
+server:
+  tomcat:
+    max-threads: 3
+  port: 6009
+  sessionTimeout: 30
+  error:
+    include-stacktrace: always
+#Spring Boot Admin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"    
+  endpoint:
+    health:
+      show-details: ALWAYS

@@ -1,0 +1,104 @@
+def canal = ""
+def dns = ""
+def ambiente = "prod"
+def sonarProy= "REEMBOLSO-API-PRO"
+def proyecto = "reembolso-api"
+def workspace = "INT002-API-PRO"
+def ftp = "op@maqui.tecnova.cl"
+def comando = "op maqui.tecnova.cl"
+def configurar = "true"
+def version="1.0.0"
+def apideploy="/u01/reembolso/api/"
+
+pipeline {
+    agent any
+    tools {
+        maven 'maven-3.6.3'
+
+    }
+    stages {
+
+        stage ('Initialize') {
+            steps {
+                //slackSend channel: "${canal}", color: 'good', message: "A comenzado un despliegue de ${workspace} en ${ambiente}, revistar Jenkins --> ${jenkins_view}"
+                sh "rm -rf /var/jenkins_home/workspace/${workspace}/*"
+                git branch: 'feature/formulario-login', credentialsId: 'Bitbucket', url: 'https://bitbucket.org/tecnova_id/int002-ws_apirest.git'
+                
+                sh """
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                """
+            }
+        }
+
+        stage ('Build-API') {
+            steps {
+                sh """
+                    pwd
+                    ls -l
+                    mvn clean install -DskipTests -f boleta/pom.xml
+                    mvn clean install -DskipTests -f centro-costo/pom.xml
+                    mvn clean install -DskipTests -f datos-tipo/pom.xml
+                    mvn clean install -DskipTests -f email/pom.xml
+                    mvn clean install -DskipTests -f gasto/pom.xml
+                    mvn clean install -DskipTests -f integracion/pom.xml
+                    mvn clean install -DskipTests -f notificaciones/pom.xml
+                    mvn clean install -DskipTests -f proyecto/pom.xml
+                    mvn clean install -DskipTests -f solicitud-reembolso/pom.xml
+                    mvn clean install -DskipTests -f usuario/pom.xml
+                """
+            }
+        }
+
+        stage ('Stop-API') {
+            steps {
+                sshagent(credentials: ['maqui-op']) {
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh boleta-0.0.1-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh centro-costo-0.0.1-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh datos-tipo-1.0.0-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh correo-0.0.1-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh gasto-1.0.0-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh integracion-1.0.0-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh notificaciones-1.0.0-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh proyecto-1.0.0-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh solicitud-reembolso-1.0.0-SNAPSHOT.jar"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} sh /u01/reembolso/kill.sh usuario-1.0.0-SNAPSHOT.jar"
+                }
+            }
+        }
+
+        stage ('Deploy-API') {
+            steps {
+                sshagent(credentials: ['maqui-op']) {
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/boleta/target/boleta-0.0.1-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/centro-costo/target/centro-costo-0.0.1-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/datos-tipo/target/datos-tipo-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/email/target/correo-0.0.1-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/gasto/target/gasto-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/integracion/target/integracion-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/notificaciones/target/notificaciones-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/proyecto/target/proyecto-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/solicitud-reembolso/target/solicitud-reembolso-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                  sh "scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/${workspace}/usuario/target/usuario-1.0.0-SNAPSHOT.jar ${ftp}:${apideploy}"
+                }
+            }
+        }
+
+        stage ('Start-API') {
+            steps {
+                sshagent(credentials: ['maqui-op']) {
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m api/boleta-0.0.1-SNAPSHOT.jar > nohup-boleta.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m api/centro-costo-0.0.1-SNAPSHOT.jar > nohup-centro-costo.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m api/datos-tipo-1.0.0-SNAPSHOT.jar > nohup-datos-tipo.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m api/correo-0.0.1-SNAPSHOT.jar > nohup-correo.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=300m api/gasto-1.0.0-SNAPSHOT.jar > nohup-gasto.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=400m api/integracion-1.0.0-SNAPSHOT.jar > nohup-integracion.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=300m api/notificaciones-1.0.0-SNAPSHOT.jar > nohup-notificaciones.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m api/proyecto-1.0.0-SNAPSHOT.jar > nohup-proyecto.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=400m api/solicitud-reembolso-1.0.0-SNAPSHOT.jar > nohup-solicitud-reembolso.out &'"
+                    sh "ssh -o StrictHostKeyChecking=no -l ${comando} 'cd /u01/reembolso/;nohup java -jar -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m api/usuario-1.0.0-SNAPSHOT.jar > nohup-usuario.out &'"
+                }
+            }
+        }
+    }
+}

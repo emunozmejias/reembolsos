@@ -1,0 +1,1064 @@
+2021-10-22 10:40:34,679 INFO  [main] cl.privilegio.centrocostoservice.CentroCostoApplication : Starting CentroCostoApplication on MacBook-Pro-de-Elizabeth.local with PID 23369 (/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo/target/classes started by emunozmejias in /Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo)
+2021-10-22 10:40:34,683 INFO  [main] cl.privilegio.centrocostoservice.CentroCostoApplication : The following profiles are active: dev
+2021-10-22 10:40:36,087 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-22 10:40:36,160 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 1 repository interfaces.
+2021-10-22 10:40:36,797 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd35aab9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 10:40:36,839 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$5cb5f7eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 10:40:37,357 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 6009 (http)
+2021-10-22 10:40:37,387 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-10-22 10:40:37,387 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-10-22 10:40:37,401 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-22 10:40:37,504 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-10-22 10:40:37,504 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2768 ms
+2021-10-22 10:40:38,836 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-22 10:40:38,837 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2021-10-22 10:40:38,837 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-22 10:40:38,837 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
+2021-10-22 10:40:38,837 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-22 10:40:38,838 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpTraceFilter' to: [/*]
+2021-10-22 10:40:38,838 INFO  [main] org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2021-10-22 10:40:38,841 INFO  [main] org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-10-22 10:40:39,033 DEBUG [main] org.hibernate.jpa.internal.util.LogHelper : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: java.net.URLClassLoader@5263ed8
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto]
+	Mapping files names []
+	Properties []
+2021-10-22 10:40:39,053 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-10-22 10:40:39,056 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-10-22 10:40:39,061 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-10-22 10:40:39,150 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2021-10-22 10:40:39,152 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2021-10-22 10:40:39,344 DEBUG [main] org.hibernate.service.spi.ServiceBinding : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-10-22 10:40:39,372 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-10-22 10:40:39,373 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-10-22 10:40:39,391 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-22 10:40:39,439 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@244b6b43
+2021-10-22 10:40:39,440 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@244b6b43
+2021-10-22 10:40:39,440 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@244b6b43
+2021-10-22 10:40:39,440 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@16c6ead5
+2021-10-22 10:40:39,441 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration true_false -> org.hibernate.type.TrueFalseType@3f6b948f
+2021-10-22 10:40:39,442 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration yes_no -> org.hibernate.type.YesNoType@623c64e7
+2021-10-22 10:40:39,444 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@ade2074
+2021-10-22 10:40:39,444 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@ade2074
+2021-10-22 10:40:39,444 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@ade2074
+2021-10-22 10:40:39,445 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration character -> org.hibernate.type.CharacterType@5c6423bf
+2021-10-22 10:40:39,445 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char -> org.hibernate.type.CharacterType@5c6423bf
+2021-10-22 10:40:39,445 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5c6423bf
+2021-10-22 10:40:39,447 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@6b527479
+2021-10-22 10:40:39,447 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@6b527479
+2021-10-22 10:40:39,447 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6b527479
+2021-10-22 10:40:39,448 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration integer -> org.hibernate.type.IntegerType@6918b910
+2021-10-22 10:40:39,448 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration int -> org.hibernate.type.IntegerType@6918b910
+2021-10-22 10:40:39,449 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6918b910
+2021-10-22 10:40:39,450 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@71b123fa
+2021-10-22 10:40:39,450 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@71b123fa
+2021-10-22 10:40:39,450 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Long -> org.hibernate.type.LongType@71b123fa
+2021-10-22 10:40:39,451 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@29c2ac6c
+2021-10-22 10:40:39,452 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@29c2ac6c
+2021-10-22 10:40:39,452 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@29c2ac6c
+2021-10-22 10:40:39,453 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@7c838c77
+2021-10-22 10:40:39,454 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@7c838c77
+2021-10-22 10:40:39,454 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7c838c77
+2021-10-22 10:40:39,455 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4413c3fa
+2021-10-22 10:40:39,455 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4413c3fa
+2021-10-22 10:40:39,457 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7cfb7ef8
+2021-10-22 10:40:39,457 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7cfb7ef8
+2021-10-22 10:40:39,458 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration string -> org.hibernate.type.StringType@2f86a3a9
+2021-10-22 10:40:39,458 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.String -> org.hibernate.type.StringType@2f86a3a9
+2021-10-22 10:40:39,459 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6db613ad
+2021-10-22 10:40:39,460 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2b23339f
+2021-10-22 10:40:39,462 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration url -> org.hibernate.type.UrlType@48380a26
+2021-10-22 10:40:39,462 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.net.URL -> org.hibernate.type.UrlType@48380a26
+2021-10-22 10:40:39,463 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Duration -> org.hibernate.type.DurationType@67771f5a
+2021-10-22 10:40:39,463 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@67771f5a
+2021-10-22 10:40:39,464 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Instant -> org.hibernate.type.InstantType@7dc312bc
+2021-10-22 10:40:39,464 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7dc312bc
+2021-10-22 10:40:39,465 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@44f0567
+2021-10-22 10:40:39,465 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@44f0567
+2021-10-22 10:40:39,467 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@c243aee
+2021-10-22 10:40:39,467 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@c243aee
+2021-10-22 10:40:39,468 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1aae351a
+2021-10-22 10:40:39,469 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1aae351a
+2021-10-22 10:40:39,470 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2a61518a
+2021-10-22 10:40:39,470 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2a61518a
+2021-10-22 10:40:39,472 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@e6698a7
+2021-10-22 10:40:39,472 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@e6698a7
+2021-10-22 10:40:39,476 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@18a7d0e9
+2021-10-22 10:40:39,476 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@18a7d0e9
+2021-10-22 10:40:39,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration date -> org.hibernate.type.DateType@13ff866d
+2021-10-22 10:40:39,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Date -> org.hibernate.type.DateType@13ff866d
+2021-10-22 10:40:39,480 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration time -> org.hibernate.type.TimeType@86d5a94
+2021-10-22 10:40:39,480 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@86d5a94
+2021-10-22 10:40:39,481 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timestamp -> org.hibernate.type.TimestampType@44d058e7
+2021-10-22 10:40:39,482 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@44d058e7
+2021-10-22 10:40:39,482 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@44d058e7
+2021-10-22 10:40:39,483 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6febf6f3
+2021-10-22 10:40:39,485 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar -> org.hibernate.type.CalendarType@28ab93c0
+2021-10-22 10:40:39,485 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@28ab93c0
+2021-10-22 10:40:39,485 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@28ab93c0
+2021-10-22 10:40:39,486 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5e4f57ff
+2021-10-22 10:40:39,487 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration locale -> org.hibernate.type.LocaleType@7575bdbe
+2021-10-22 10:40:39,488 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7575bdbe
+2021-10-22 10:40:39,489 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration currency -> org.hibernate.type.CurrencyType@116b71c7
+2021-10-22 10:40:39,489 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@116b71c7
+2021-10-22 10:40:39,490 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timezone -> org.hibernate.type.TimeZoneType@7e27d796
+2021-10-22 10:40:39,491 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7e27d796
+2021-10-22 10:40:39,492 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration class -> org.hibernate.type.ClassType@3391721f
+2021-10-22 10:40:39,493 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3391721f
+2021-10-22 10:40:39,494 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2301b943
+2021-10-22 10:40:39,495 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2301b943
+2021-10-22 10:40:39,496 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@20c602d9
+2021-10-22 10:40:39,498 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration binary -> org.hibernate.type.BinaryType@1cbbf833
+2021-10-22 10:40:39,499 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte[] -> org.hibernate.type.BinaryType@1cbbf833
+2021-10-22 10:40:39,500 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [B -> org.hibernate.type.BinaryType@1cbbf833
+2021-10-22 10:40:39,501 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4ea27970
+2021-10-22 10:40:39,501 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4ea27970
+2021-10-22 10:40:39,501 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4ea27970
+2021-10-22 10:40:39,503 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration row_version -> org.hibernate.type.RowVersionType@6e50425c
+2021-10-22 10:40:39,506 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration image -> org.hibernate.type.ImageType@132e20c6
+2021-10-22 10:40:39,508 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration characters -> org.hibernate.type.CharArrayType@f11ae13
+2021-10-22 10:40:39,508 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char[] -> org.hibernate.type.CharArrayType@f11ae13
+2021-10-22 10:40:39,508 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [C -> org.hibernate.type.CharArrayType@f11ae13
+2021-10-22 10:40:39,510 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@60f9d17d
+2021-10-22 10:40:39,510 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@60f9d17d
+2021-10-22 10:40:39,511 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@60f9d17d
+2021-10-22 10:40:39,511 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration text -> org.hibernate.type.TextType@6e0ae795
+2021-10-22 10:40:39,513 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ntext -> org.hibernate.type.NTextType@7c7a9509
+2021-10-22 10:40:39,515 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration blob -> org.hibernate.type.BlobType@18474a7d
+2021-10-22 10:40:39,515 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@18474a7d
+2021-10-22 10:40:39,516 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@ca345fe
+2021-10-22 10:40:39,518 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration clob -> org.hibernate.type.ClobType@1ca1a3cc
+2021-10-22 10:40:39,519 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1ca1a3cc
+2021-10-22 10:40:39,521 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nclob -> org.hibernate.type.NClobType@6024119a
+2021-10-22 10:40:39,521 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6024119a
+2021-10-22 10:40:39,522 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5af9af10
+2021-10-22 10:40:39,522 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@64f3c434
+2021-10-22 10:40:39,525 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration serializable -> org.hibernate.type.SerializableType@65185e59
+2021-10-22 10:40:39,531 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration object -> org.hibernate.type.ObjectType@4fab2af8
+2021-10-22 10:40:39,531 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4fab2af8
+2021-10-22 10:40:39,532 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6668dab5
+2021-10-22 10:40:39,532 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7082d06a
+2021-10-22 10:40:39,532 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6b618852
+2021-10-22 10:40:39,533 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1ce78239
+2021-10-22 10:40:39,533 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3cfa4e62
+2021-10-22 10:40:39,533 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5a1dd817
+2021-10-22 10:40:39,533 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3dd9e81e
+2021-10-22 10:40:39,533 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1d0f43d6
+2021-10-22 10:40:39,547 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2943aa9d] into BootstrapContext; was [null]
+2021-10-22 10:40:39,547 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2943aa9d) [was null]
+2021-10-22 10:40:39,548 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@34f30c37] into BootstrapContext; was [null]
+2021-10-22 10:40:39,548 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@d04f76] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@50b5f680]
+2021-10-22 10:40:39,610 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2943aa9d]
+2021-10-22 10:40:39,610 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2943aa9d]
+2021-10-22 10:40:39,632 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-10-22 10:40:39,632 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-10-22 10:40:39,633 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 10:40:39,634 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 10:40:39,634 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-10-22 10:40:39,636 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-10-22 10:40:39,636 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-10-22 10:40:39,638 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 10:40:39,639 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-10-22 10:40:39,641 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-10-22 10:40:39,641 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-10-22 10:40:39,642 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-10-22 10:40:39,642 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 10:40:39,644 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-10-22 10:40:39,650 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-10-22 10:40:39,921 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-10-22 10:40:39,928 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Database ->
+       name : PostgreSQL
+    version : 10.14
+      major : 10
+      minor : 14
+2021-10-22 10:40:39,928 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.5
+      major : 42
+      minor : 2
+2021-10-22 10:40:39,928 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : JDBC version : 4.2
+2021-10-22 10:40:39,945 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-22 10:40:44,485 DEBUG [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-10-22 10:40:44,535 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cl.privilegio.centrocostoservice.CentroCostoApplication.main(CentroCostoApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688)
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269)
+	... 50 common frames omitted
+2021-10-22 10:40:44,543 DEBUG [main] org.hibernate.boot.model.relational.Namespace : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-10-22 10:40:44,544 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@44b3097
+2021-10-22 10:40:44,544 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@44b3097
+2021-10-22 10:40:44,545 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2301b943
+2021-10-22 10:40:44,546 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6fd85f39] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6ae3564c]
+2021-10-22 10:40:44,615 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 10:40:44,640 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 10:40:44,645 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name PrivilegioCentroCosto
+2021-10-22 10:40:44,651 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto on table privilegio_centro_costo
+2021-10-22 10:40:44,671 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(privilegio_centro_costo), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-10-22 10:40:44,675 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-10-22 10:40:44,677 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto:id]
+2021-10-22 10:40:44,678 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-10-22 10:40:44,681 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-10-22 10:40:44,683 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, sequence_centro_costo, ...)
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(privilegio_centro_costo), mappingColumn=id_centro_costo, insertable=true, updatable=true, unique=false}
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idCentroCosto with lazy=false
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto:idCentroCosto]
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idCentroCosto
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idCentroCosto
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(privilegio_centro_costo), mappingColumn=id_usuario, insertable=true, updatable=true, unique=false}
+2021-10-22 10:40:44,685 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idUsuario with lazy=false
+2021-10-22 10:40:44,686 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto:idUsuario]
+2021-10-22 10:40:44,686 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idUsuario
+2021-10-22 10:40:44,686 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idUsuario
+2021-10-22 10:40:44,687 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-10-22 10:40:44,688 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idCentroCosto
+2021-10-22 10:40:44,688 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idUsuario
+2021-10-22 10:40:44,690 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [privilegio_centro_costo]
+2021-10-22 10:40:44,728 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Building session factory
+2021-10-22 10:40:44,729 DEBUG [main] org.hibernate.cfg.Settings : SessionFactory name : null
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Automatic flush during beforeCompletion(): enabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Automatic session close at end of transaction: disabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Statistics: disabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Deleted entity synthetic identifier rollback: disabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Default entity-mode: pojo
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Allow initialization of lazy state outside session : disabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Using BatchFetchStyle : LEGACY
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Default batch fetch size: -1
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Maximum outer join fetch depth: null
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Default null ordering: NONE
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Order SQL updates by primary key: disabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : Order SQL inserts for batching: disabled
+2021-10-22 10:40:44,730 DEBUG [main] org.hibernate.cfg.Settings : multi-tenancy strategy : NONE
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : JTA Track by Thread: enabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Query language substitutions: {}
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Named query checking : enabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache factory: null
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache region prefix: null
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Optimize second-level cache for minimal puts: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Structured second-level cache entries: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache direct-reference entries: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Automatic eviction of collection cache: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch size: 15
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch updates for versioned data: enabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Scrollable result sets: enabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : Wrap result sets: disabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC3 getGeneratedKeys(): enabled
+2021-10-22 10:40:44,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC result set fetch size: null
+2021-10-22 10:40:44,732 DEBUG [main] org.hibernate.cfg.Settings : Connection release mode: ON_CLOSE
+2021-10-22 10:40:44,732 DEBUG [main] org.hibernate.cfg.Settings : Generate SQL with comments: disabled
+2021-10-22 10:40:44,732 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - query : 
+2021-10-22 10:40:44,732 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - closed-handling : 
+2021-10-22 10:40:44,732 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - lists : 
+2021-10-22 10:40:44,732 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - transactions : 
+2021-10-22 10:40:44,804 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Session factory constructed with filter configurations : {}
+2021-10-22 10:40:44,804 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@7e55caf0, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=America/Santiago, user.country.format=CL, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=ES, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -B spring-boot:run, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@5d460176, javax.persistence.sharedCache.mode=UNSPECIFIED, maven.home=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo/EMBEDDED, sun.cpu.endian=little, user.home=/Users/emunozmejias, user.language=es, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_121-b13, user.name=emunozmejias, path.separator=:, os.version=10.16, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, FILE_LOG_PATTERN=%d %-5level [%thread] %logger : %msg%n, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/application-centro-costo.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/, catalina.home=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.2913978983772451455.6009, java.version=1.8.0_121, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo, os.arch=x86_64, maven.multiModuleProjectDirectory=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo, PID=23369, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.2913978983772451455.6009, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@61e05c87, java.library.path=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.121-b13, classworlds.conf=/Users/emunozmejias/eclipse-workspace-reembolso/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6928046975072489935.tmp, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0, CONSOLE_LOG_PATTERN=%d %-5level %logger : %msg%n}
+2021-10-22 10:40:44,825 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 10:40:44,826 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 10:40:44,826 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 10:40:44,826 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 10:40:44,826 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 10:40:44,826 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 10:40:44,831 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 10:40:44,831 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 10:40:44,831 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 10:40:44,831 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 10:40:44,831 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 10:40:44,831 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 10:40:44,832 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto] is safe
+2021-10-22 10:40:44,832 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 10:40:44,870 DEBUG [main] org.hibernate.secure.spi.JaccIntegrator : Skipping JACC integration as it was not enabled
+2021-10-22 10:40:44,871 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiated session factory
+2021-10-22 10:40:44,871 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6fd85f39] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@60005ab9]
+2021-10-22 10:40:44,918 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto] is safe
+2021-10-22 10:40:44,918 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 10:40:44,937 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto] is safe
+2021-10-22 10:40:44,938 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 10:40:45,178 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 10:40:45,178 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from privilegio_centro_costo where id =?
+2021-10-22 10:40:45,178 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select privilegio_.id, privilegio_.id_centro_costo as id_centr2_0_, privilegio_.id_usuario as id_usuar3_0_ from privilegio_centro_costo privilegio_ where privilegio_.id=?
+2021-10-22 10:40:45,178 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into privilegio_centro_costo (id_centro_costo, id_usuario, id) values (?, ?, ?)
+2021-10-22 10:40:45,179 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update privilegio_centro_costo set id_centro_costo=?, id_usuario=? where id=?
+2021-10-22 10:40:45,179 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from privilegio_centro_costo where id=?
+2021-10-22 10:40:45,211 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43433ab9]
+2021-10-22 10:40:45,212 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idCentroCosto
+2021-10-22 10:40:45,212 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 10:40:45,213 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:40:45,226 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:40:45,229 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - Returns
+       - EntityReturnImpl(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto, querySpaceUid=<gen:0>, path=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+          - SQL table alias mapping - privilegio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto [NONE]: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b54d014]
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idCentroCosto
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:40:45,232 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - Returns
+       - EntityReturnImpl(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto, querySpaceUid=<gen:0>, path=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+          - SQL table alias mapping - privilegio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-10-22 10:40:45,233 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto [READ]: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 10:40:45,247 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 10:40:45,247 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 10:40:45,269 DEBUG [main] org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator : No actions specified; doing nothing
+2021-10-22 10:40:45,270 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named HQL queries
+2021-10-22 10:40:45,270 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named SQL queries
+2021-10-22 10:40:45,272 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@43dde849
+2021-10-22 10:40:45,272 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Registering SessionFactory: 9e30403c-566d-4db9-89e3-ffdbbd6cb7f1 (<unnamed>)
+2021-10-22 10:40:45,272 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Not binding SessionFactory to JNDI, no JNDI name configured
+2021-10-22 10:40:45,272 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 10:40:45,467 DEBUG [main] org.hibernate.stat.internal.StatisticsInitiator : Statistics initialized [enabled=false]
+2021-10-22 10:40:46,394 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-10-22 10:40:46,659 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-10-22 10:40:46,693 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 10:40:46,693 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 10:40:46,693 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 10:40:46,698 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 10:40:46,699 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 10:40:46,699 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-10-22 10:40:46,700 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-10-22 10:40:46,700 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-10-22 10:40:46,701 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 10:40:46,701 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2021-10-22 10:40:46,701 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 10:40:46,702 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 10:40:46,702 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 10:40:46,705 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 10:40:46,705 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 10:40:46,705 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 10:40:46,706 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 10:40:46,706 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 10:40:46,870 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-22 10:40:47,328 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService
+2021-10-22 10:40:47,708 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-10-22 10:40:47,740 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-10-22 10:40:47,795 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-10-22 10:40:48,038 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-10-22 10:40:48,040 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-10-22 10:40:48,045 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-10-22 10:40:48,048 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-10-22 10:40:48,050 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-10-22 10:40:48,053 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-10-22 10:40:48,055 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-10-22 10:40:48,057 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-10-22 10:40:48,059 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-10-22 10:40:48,061 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-10-22 10:40:48,063 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-10-22 10:40:48,064 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-10-22 10:40:48,066 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-10-22 10:40:48,068 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-10-22 10:40:48,070 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-10-22 10:40:48,072 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-10-22 10:40:48,075 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-10-22 10:40:48,076 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-10-22 10:40:48,078 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-10-22 10:40:48,079 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-10-22 10:40:48,081 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2021-10-22 10:40:48,083 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_21
+2021-10-22 10:40:48,147 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 6009 (http) with context path ''
+2021-10-22 10:40:48,151 INFO  [main] cl.privilegio.centrocostoservice.CentroCostoApplication : Started CentroCostoApplication in 14.169 seconds (JVM running for 19.297)
+2021-10-22 10:40:53,249 WARN  [registrationTask1] de.codecentric.boot.admin.client.registration.ApplicationRegistrator : Failed to register application as Application(name=centro, managementUrl=http://192.168.100.7:6009/actuator, healthUrl=http://192.168.100.7:6009/actuator/health, serviceUrl=http://192.168.100.7:6009/) at spring-boot-admin ([http://elqui.tecnova.cl:9000/instances]): I/O error on POST request for "http://elqui.tecnova.cl:9000/instances": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out. Further attempts are logged on DEBUG level
+2021-10-22 10:41:21,840 INFO  [http-nio-6009-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 10:41:21,841 INFO  [http-nio-6009-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-10-22 10:41:21,864 INFO  [http-nio-6009-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 23 ms
+2021-10-22 10:41:29,065 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-22 10:41:29,065 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.transaction.internal.TransactionImpl : begin
+2021-10-22 10:41:29,101 DEBUG [http-nio-6009-exec-3] org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select generatedAlias0 from PrivilegioCentroCosto as generatedAlias0
+2021-10-22 10:41:29,122 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@41da4b2
+2021-10-22 10:41:29,122 INFO  [http-nio-6009-exec-3] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory
+2021-10-22 10:41:29,161 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select generatedAlias0 from cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto as generatedAlias0
+2021-10-22 10:41:29,169 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:41:29,176 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'privilegio'
+       |     |  |  |  \-[IDENT] Node: 'centrocostoservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'PrivilegioCentroCosto'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2021-10-22 10:41:29,206 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 10:41:29,221 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto (generatedAlias0) -> privilegio0_
+2021-10-22 10:41:29,222 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> privilegio0_.id
+2021-10-22 10:41:29,224 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 10:41:29,224 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} privilegio0_.id ) ( FromClause{level=1} privilegio_centro_costo privilegio0_ ) )
+2021-10-22 10:41:29,234 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [privilegio_centro_costo privilegio0_]
+2021-10-22 10:41:29,234 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 10:41:29,234 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (privilegio_centro_costo)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'privilegio0_.id as id1_0_' {alias=generatedAlias0, className=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto, tableAlias=privilegio0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'privilegio0_.id_centro_costo as id_centr2_0_, privilegio0_.id_usuario as id_usuar3_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[privilegio0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'privilegio_centro_costo privilegio0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=privilegio_centro_costo,tableAlias=privilegio0_,origin=null,columns={,className=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto}}
+
+2021-10-22 10:41:29,235 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:41:29,242 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select generatedAlias0 from cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto as generatedAlias0
+2021-10-22 10:41:29,243 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select privilegio0_.id as id1_0_, privilegio0_.id_centro_costo as id_centr2_0_, privilegio0_.id_usuario as id_usuar3_0_ from privilegio_centro_costo privilegio0_
+2021-10-22 10:41:29,243 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:41:29,260 DEBUG [http-nio-6009-exec-3] org.hibernate.SQL : select privilegio0_.id as id1_0_, privilegio0_.id_centro_costo as id_centr2_0_, privilegio0_.id_usuario as id_usuar3_0_ from privilegio_centro_costo privilegio0_ limit ?
+2021-10-22 10:41:29,324 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 0
+2021-10-22 10:41:29,326 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#10]
+2021-10-22 10:41:29,333 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 1
+2021-10-22 10:41:29,333 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#11]
+2021-10-22 10:41:29,333 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 2
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#12]
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 3
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#13]
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 4
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#14]
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 5
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#15]
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 6
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#16]
+2021-10-22 10:41:29,334 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 7
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#17]
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 8
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#18]
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 9
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#19]
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 10
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#20]
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 11
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#21]
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 12
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#22]
+2021-10-22 10:41:29,335 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 13
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#23]
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 14
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#24]
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 15
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#25]
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 16
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#26]
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 17
+2021-10-22 10:41:29,336 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#27]
+2021-10-22 10:41:29,337 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 18
+2021-10-22 10:41:29,337 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#37]
+2021-10-22 10:41:29,337 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 19
+2021-10-22 10:41:29,337 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#38]
+2021-10-22 10:41:29,338 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#10]
+2021-10-22 10:41:29,339 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#10]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#11]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#11]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#12]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#12]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#13]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#13]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#14]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#14]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#15]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#15]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#16]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#16]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#17]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#17]
+2021-10-22 10:41:29,340 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#18]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#18]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#19]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#19]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#20]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#20]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#21]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#21]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#22]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#22]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#23]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#23]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#24]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#24]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#25]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#25]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#26]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#26]
+2021-10-22 10:41:29,341 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#27]
+2021-10-22 10:41:29,342 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#27]
+2021-10-22 10:41:29,342 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#37]
+2021-10-22 10:41:29,342 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#37]
+2021-10-22 10:41:29,342 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#38]
+2021-10-22 10:41:29,342 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto#38]
+2021-10-22 10:41:29,350 DEBUG [http-nio-6009-exec-3] org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select count(generatedAlias0) from PrivilegioCentroCosto as generatedAlias0
+2021-10-22 10:41:29,350 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select count(generatedAlias0) from cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto as generatedAlias0
+2021-10-22 10:41:29,351 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:41:29,352 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'privilegio'
+       |     |  |  |  \-[IDENT] Node: 'centrocostoservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'PrivilegioCentroCosto'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[COUNT] Node: 'count'
+             \-[IDENT] Node: 'generatedAlias0'
+
+2021-10-22 10:41:29,352 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 10:41:29,352 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto (generatedAlias0) -> privilegio0_
+2021-10-22 10:41:29,352 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> privilegio0_.id
+2021-10-22 10:41:29,353 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 10:41:29,353 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} ( count privilegio0_.id ) ) ( FromClause{level=1} privilegio_centro_costo privilegio0_ ) )
+2021-10-22 10:41:29,353 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [privilegio_centro_costo privilegio0_]
+2021-10-22 10:41:29,353 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 10:41:29,353 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (privilegio_centro_costo)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'count'
+    |  |  \-[ALIAS_REF] IdentNode: 'privilegio0_.id' {alias=generatedAlias0, className=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto, tableAlias=privilegio0_}
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[privilegio0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'privilegio_centro_costo privilegio0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=privilegio_centro_costo,tableAlias=privilegio0_,origin=null,columns={,className=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto}}
+
+2021-10-22 10:41:29,354 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:41:29,354 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select count(generatedAlias0) from cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto as generatedAlias0
+2021-10-22 10:41:29,354 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select count(privilegio0_.id) as col_0_0_ from privilegio_centro_costo privilegio0_
+2021-10-22 10:41:29,354 DEBUG [http-nio-6009-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:41:29,355 DEBUG [http-nio-6009-exec-3] org.hibernate.SQL : select count(privilegio0_.id) as col_0_0_ from privilegio_centro_costo privilegio0_
+2021-10-22 10:41:29,387 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result set row: 0
+2021-10-22 10:41:29,387 DEBUG [http-nio-6009-exec-3] org.hibernate.loader.Loader : Result row: 
+2021-10-22 10:41:29,389 DEBUG [http-nio-6009-exec-3] org.hibernate.engine.transaction.internal.TransactionImpl : committing
+2021-10-22 10:41:34,283 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService
+2021-10-22 10:41:34,284 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-22 10:41:34,287 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 10:41:34,287 DEBUG [Thread-7] org.hibernate.internal.SessionFactoryImpl : HHH000031: Closing
+2021-10-22 10:41:34,288 DEBUG [Thread-7] org.hibernate.type.spi.TypeConfiguration$Scope : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@29da497b] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@60005ab9]
+2021-10-22 10:41:34,289 DEBUG [Thread-7] org.hibernate.service.internal.AbstractServiceRegistryImpl : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2021-10-22 10:41:34,289 DEBUG [Thread-7] org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2021-10-22 10:41:34,290 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-10-22 10:41:34,295 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-10-22 11:04:02,060 INFO  [main] cl.privilegio.centrocostoservice.CentroCostoApplication : Starting CentroCostoApplication on MacBook-Pro-de-Elizabeth.local with PID 23751 (/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo/target/classes started by emunozmejias in /Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo)
+2021-10-22 11:04:02,065 INFO  [main] cl.privilegio.centrocostoservice.CentroCostoApplication : The following profiles are active: dev
+2021-10-22 11:04:03,283 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-22 11:04:03,359 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 repository interfaces.
+2021-10-22 11:04:03,894 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30d33845] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 11:04:03,929 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$b0538577] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 11:04:04,377 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 6009 (http)
+2021-10-22 11:04:04,400 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-10-22 11:04:04,401 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-10-22 11:04:04,414 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-22 11:04:04,504 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-10-22 11:04:04,504 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2289 ms
+2021-10-22 11:04:05,542 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-22 11:04:05,543 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2021-10-22 11:04:05,543 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-22 11:04:05,543 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
+2021-10-22 11:04:05,543 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-22 11:04:05,544 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpTraceFilter' to: [/*]
+2021-10-22 11:04:05,544 INFO  [main] org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2021-10-22 11:04:05,546 INFO  [main] org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-10-22 11:04:05,734 DEBUG [main] org.hibernate.jpa.internal.util.LogHelper : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: java.net.URLClassLoader@445fac6
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto]
+	Mapping files names []
+	Properties []
+2021-10-22 11:04:05,753 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-10-22 11:04:05,755 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-10-22 11:04:05,759 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-10-22 11:04:05,821 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2021-10-22 11:04:05,823 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2021-10-22 11:04:05,962 DEBUG [main] org.hibernate.service.spi.ServiceBinding : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-10-22 11:04:05,984 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-10-22 11:04:05,985 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-10-22 11:04:05,998 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-22 11:04:06,032 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@68864945
+2021-10-22 11:04:06,032 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@68864945
+2021-10-22 11:04:06,032 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@68864945
+2021-10-22 11:04:06,033 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6c7190d0
+2021-10-22 11:04:06,034 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration true_false -> org.hibernate.type.TrueFalseType@66611d79
+2021-10-22 11:04:06,035 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration yes_no -> org.hibernate.type.YesNoType@b2888f4
+2021-10-22 11:04:06,036 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@7e8ca0d8
+2021-10-22 11:04:06,036 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@7e8ca0d8
+2021-10-22 11:04:06,036 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7e8ca0d8
+2021-10-22 11:04:06,038 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration character -> org.hibernate.type.CharacterType@2b797b85
+2021-10-22 11:04:06,038 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char -> org.hibernate.type.CharacterType@2b797b85
+2021-10-22 11:04:06,038 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2b797b85
+2021-10-22 11:04:06,039 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@31e3b0db
+2021-10-22 11:04:06,039 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@31e3b0db
+2021-10-22 11:04:06,040 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@31e3b0db
+2021-10-22 11:04:06,041 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration integer -> org.hibernate.type.IntegerType@1c87282a
+2021-10-22 11:04:06,041 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration int -> org.hibernate.type.IntegerType@1c87282a
+2021-10-22 11:04:06,041 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1c87282a
+2021-10-22 11:04:06,043 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@52f7b134
+2021-10-22 11:04:06,043 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@52f7b134
+2021-10-22 11:04:06,043 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Long -> org.hibernate.type.LongType@52f7b134
+2021-10-22 11:04:06,044 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@a9d41b7
+2021-10-22 11:04:06,044 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@a9d41b7
+2021-10-22 11:04:06,044 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@a9d41b7
+2021-10-22 11:04:06,045 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@931a114
+2021-10-22 11:04:06,045 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@931a114
+2021-10-22 11:04:06,045 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@931a114
+2021-10-22 11:04:06,046 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@28a95c35
+2021-10-22 11:04:06,046 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@28a95c35
+2021-10-22 11:04:06,047 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4885b3e1
+2021-10-22 11:04:06,047 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4885b3e1
+2021-10-22 11:04:06,048 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration string -> org.hibernate.type.StringType@6ce0464
+2021-10-22 11:04:06,049 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.String -> org.hibernate.type.StringType@6ce0464
+2021-10-22 11:04:06,049 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@a7e5ad0
+2021-10-22 11:04:06,050 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@58926667
+2021-10-22 11:04:06,051 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration url -> org.hibernate.type.UrlType@4baed056
+2021-10-22 11:04:06,051 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.net.URL -> org.hibernate.type.UrlType@4baed056
+2021-10-22 11:04:06,051 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Duration -> org.hibernate.type.DurationType@28f75083
+2021-10-22 11:04:06,052 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@28f75083
+2021-10-22 11:04:06,053 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Instant -> org.hibernate.type.InstantType@6f5bb9b2
+2021-10-22 11:04:06,053 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6f5bb9b2
+2021-10-22 11:04:06,054 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@5b6be39
+2021-10-22 11:04:06,054 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@5b6be39
+2021-10-22 11:04:06,055 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5cbe284a
+2021-10-22 11:04:06,055 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5cbe284a
+2021-10-22 11:04:06,056 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@65c084c
+2021-10-22 11:04:06,056 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@65c084c
+2021-10-22 11:04:06,057 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@20045bb3
+2021-10-22 11:04:06,057 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@20045bb3
+2021-10-22 11:04:06,058 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@58b18d2
+2021-10-22 11:04:06,059 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@58b18d2
+2021-10-22 11:04:06,061 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@230914da
+2021-10-22 11:04:06,061 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@230914da
+2021-10-22 11:04:06,062 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration date -> org.hibernate.type.DateType@65bd9475
+2021-10-22 11:04:06,063 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Date -> org.hibernate.type.DateType@65bd9475
+2021-10-22 11:04:06,064 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration time -> org.hibernate.type.TimeType@47c14361
+2021-10-22 11:04:06,064 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@47c14361
+2021-10-22 11:04:06,065 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timestamp -> org.hibernate.type.TimestampType@5e940484
+2021-10-22 11:04:06,065 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5e940484
+2021-10-22 11:04:06,065 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5e940484
+2021-10-22 11:04:06,066 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@33868f62
+2021-10-22 11:04:06,067 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar -> org.hibernate.type.CalendarType@35fd7716
+2021-10-22 11:04:06,068 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@35fd7716
+2021-10-22 11:04:06,068 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@35fd7716
+2021-10-22 11:04:06,069 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5fe3cf20
+2021-10-22 11:04:06,070 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration locale -> org.hibernate.type.LocaleType@407adab2
+2021-10-22 11:04:06,070 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@407adab2
+2021-10-22 11:04:06,071 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration currency -> org.hibernate.type.CurrencyType@1a11ca91
+2021-10-22 11:04:06,071 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1a11ca91
+2021-10-22 11:04:06,072 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timezone -> org.hibernate.type.TimeZoneType@21440dc6
+2021-10-22 11:04:06,073 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@21440dc6
+2021-10-22 11:04:06,074 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration class -> org.hibernate.type.ClassType@702f0797
+2021-10-22 11:04:06,074 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@702f0797
+2021-10-22 11:04:06,076 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@a9974ea
+2021-10-22 11:04:06,076 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@a9974ea
+2021-10-22 11:04:06,076 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@625a8297
+2021-10-22 11:04:06,077 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration binary -> org.hibernate.type.BinaryType@410667bb
+2021-10-22 11:04:06,078 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte[] -> org.hibernate.type.BinaryType@410667bb
+2021-10-22 11:04:06,078 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [B -> org.hibernate.type.BinaryType@410667bb
+2021-10-22 11:04:06,079 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2726e15a
+2021-10-22 11:04:06,079 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2726e15a
+2021-10-22 11:04:06,079 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2726e15a
+2021-10-22 11:04:06,080 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration row_version -> org.hibernate.type.RowVersionType@3da5faa3
+2021-10-22 11:04:06,081 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration image -> org.hibernate.type.ImageType@152e35c0
+2021-10-22 11:04:06,082 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration characters -> org.hibernate.type.CharArrayType@4412ad86
+2021-10-22 11:04:06,082 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char[] -> org.hibernate.type.CharArrayType@4412ad86
+2021-10-22 11:04:06,083 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [C -> org.hibernate.type.CharArrayType@4412ad86
+2021-10-22 11:04:06,084 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@31973e80
+2021-10-22 11:04:06,084 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@31973e80
+2021-10-22 11:04:06,085 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@31973e80
+2021-10-22 11:04:06,085 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration text -> org.hibernate.type.TextType@e241e28
+2021-10-22 11:04:06,086 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ntext -> org.hibernate.type.NTextType@2162bc52
+2021-10-22 11:04:06,087 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration blob -> org.hibernate.type.BlobType@2fe4d26f
+2021-10-22 11:04:06,088 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2fe4d26f
+2021-10-22 11:04:06,088 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4451a2b
+2021-10-22 11:04:06,340 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration clob -> org.hibernate.type.ClobType@79c01384
+2021-10-22 11:04:06,340 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@79c01384
+2021-10-22 11:04:06,342 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nclob -> org.hibernate.type.NClobType@7ed6c5e6
+2021-10-22 11:04:06,343 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7ed6c5e6
+2021-10-22 11:04:06,343 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@284f2b5d
+2021-10-22 11:04:06,344 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@56fbd51e
+2021-10-22 11:04:06,346 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration serializable -> org.hibernate.type.SerializableType@4169b8d2
+2021-10-22 11:04:06,350 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration object -> org.hibernate.type.ObjectType@2e90f064
+2021-10-22 11:04:06,350 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2e90f064
+2021-10-22 11:04:06,351 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@204c2d08
+2021-10-22 11:04:06,351 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@9f6eab5
+2021-10-22 11:04:06,351 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5a5d97ea
+2021-10-22 11:04:06,351 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6b65410b
+2021-10-22 11:04:06,351 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2a000502
+2021-10-22 11:04:06,351 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@149de1b5
+2021-10-22 11:04:06,352 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2249c60b
+2021-10-22 11:04:06,352 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6365b650
+2021-10-22 11:04:06,363 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@19890285] into BootstrapContext; was [null]
+2021-10-22 11:04:06,363 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@19890285) [was null]
+2021-10-22 11:04:06,363 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@165d07c2] into BootstrapContext; was [null]
+2021-10-22 11:04:06,364 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@4791b2a6] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@70204ea8]
+2021-10-22 11:04:06,409 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@19890285]
+2021-10-22 11:04:06,409 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@19890285]
+2021-10-22 11:04:06,422 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-10-22 11:04:06,422 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-10-22 11:04:06,423 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 11:04:06,423 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 11:04:06,423 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-10-22 11:04:06,424 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-10-22 11:04:06,424 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-10-22 11:04:06,425 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 11:04:06,426 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-10-22 11:04:06,427 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-10-22 11:04:06,427 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-10-22 11:04:06,428 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-10-22 11:04:06,428 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 11:04:06,429 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-10-22 11:04:06,434 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-10-22 11:04:06,684 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-10-22 11:04:06,690 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Database ->
+       name : PostgreSQL
+    version : 10.14
+      major : 10
+      minor : 14
+2021-10-22 11:04:06,690 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.5
+      major : 42
+      minor : 2
+2021-10-22 11:04:06,691 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : JDBC version : 4.2
+2021-10-22 11:04:06,701 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-22 11:04:11,214 DEBUG [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-10-22 11:04:11,243 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cl.privilegio.centrocostoservice.CentroCostoApplication.main(CentroCostoApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688)
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269)
+	... 50 common frames omitted
+2021-10-22 11:04:11,249 DEBUG [main] org.hibernate.boot.model.relational.Namespace : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-10-22 11:04:11,250 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1a293b50
+2021-10-22 11:04:11,251 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@1a293b50
+2021-10-22 11:04:11,251 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@a9974ea
+2021-10-22 11:04:11,252 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@359f451a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1928fe7a]
+2021-10-22 11:04:11,298 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 11:04:11,316 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 11:04:11,320 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name PrivilegioCentroCosto
+2021-10-22 11:04:11,326 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto on table privilegio_centro_costo
+2021-10-22 11:04:11,345 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(privilegio_centro_costo), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-10-22 11:04:11,348 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-10-22 11:04:11,350 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto:id]
+2021-10-22 11:04:11,353 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-10-22 11:04:11,355 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-10-22 11:04:11,358 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, sequence_centro_costo, ...)
+2021-10-22 11:04:11,359 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(privilegio_centro_costo), mappingColumn=id_centro_costo, insertable=true, updatable=true, unique=false}
+2021-10-22 11:04:11,359 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idCentroCosto with lazy=false
+2021-10-22 11:04:11,360 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto:idCentroCosto]
+2021-10-22 11:04:11,360 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idCentroCosto
+2021-10-22 11:04:11,360 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idCentroCosto
+2021-10-22 11:04:11,360 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(privilegio_centro_costo), mappingColumn=id_usuario, insertable=true, updatable=true, unique=false}
+2021-10-22 11:04:11,360 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idUsuario with lazy=false
+2021-10-22 11:04:11,360 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto:idUsuario]
+2021-10-22 11:04:11,361 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idUsuario
+2021-10-22 11:04:11,361 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idUsuario
+2021-10-22 11:04:11,362 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-10-22 11:04:11,362 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idCentroCosto
+2021-10-22 11:04:11,362 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idUsuario
+2021-10-22 11:04:11,364 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [privilegio_centro_costo]
+2021-10-22 11:04:11,395 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Building session factory
+2021-10-22 11:04:11,396 DEBUG [main] org.hibernate.cfg.Settings : SessionFactory name : null
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Automatic flush during beforeCompletion(): enabled
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Automatic session close at end of transaction: disabled
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Statistics: disabled
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Deleted entity synthetic identifier rollback: disabled
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Default entity-mode: pojo
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Allow initialization of lazy state outside session : disabled
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Using BatchFetchStyle : LEGACY
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Default batch fetch size: -1
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Maximum outer join fetch depth: null
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Default null ordering: NONE
+2021-10-22 11:04:11,397 DEBUG [main] org.hibernate.cfg.Settings : Order SQL updates by primary key: disabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Order SQL inserts for batching: disabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : multi-tenancy strategy : NONE
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : JTA Track by Thread: enabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Query language substitutions: {}
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Named query checking : enabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache: disabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache: disabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache factory: null
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache region prefix: null
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Optimize second-level cache for minimal puts: disabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Structured second-level cache entries: disabled
+2021-10-22 11:04:11,398 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache direct-reference entries: disabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : Automatic eviction of collection cache: disabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch size: 15
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch updates for versioned data: enabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : Scrollable result sets: enabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : Wrap result sets: disabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : JDBC3 getGeneratedKeys(): enabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : JDBC result set fetch size: null
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : Connection release mode: ON_CLOSE
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : Generate SQL with comments: disabled
+2021-10-22 11:04:11,399 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - query : 
+2021-10-22 11:04:11,400 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - closed-handling : 
+2021-10-22 11:04:11,400 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - lists : 
+2021-10-22 11:04:11,400 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - transactions : 
+2021-10-22 11:04:11,458 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Session factory constructed with filter configurations : {}
+2021-10-22 11:04:11,459 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@682ae252, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=America/Santiago, user.country.format=CL, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=ES, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -B spring-boot:run, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@115e2b54, javax.persistence.sharedCache.mode=UNSPECIFIED, maven.home=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo/EMBEDDED, sun.cpu.endian=little, user.home=/Users/emunozmejias, user.language=es, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_121-b13, user.name=emunozmejias, path.separator=:, os.version=10.16, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, FILE_LOG_PATTERN=%d %-5level [%thread] %logger : %msg%n, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/application-centro-costo.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/, catalina.home=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.6339447799460544091.6009, java.version=1.8.0_121, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo, os.arch=x86_64, maven.multiModuleProjectDirectory=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/centro-costo, PID=23751, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.6339447799460544091.6009, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@7005a772, java.library.path=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.121-b13, classworlds.conf=/Users/emunozmejias/eclipse-workspace-reembolso/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1927386862428746531.tmp, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0, CONSOLE_LOG_PATTERN=%d %-5level %logger : %msg%n}
+2021-10-22 11:04:11,474 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 11:04:11,474 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 11:04:11,474 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 11:04:11,475 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 11:04:11,475 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 11:04:11,475 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 11:04:11,480 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 11:04:11,481 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 11:04:11,481 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 11:04:11,481 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 11:04:11,481 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 11:04:11,481 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 11:04:11,482 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto] is safe
+2021-10-22 11:04:11,485 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 11:04:11,518 DEBUG [main] org.hibernate.secure.spi.JaccIntegrator : Skipping JACC integration as it was not enabled
+2021-10-22 11:04:11,519 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiated session factory
+2021-10-22 11:04:11,519 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@359f451a] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@14b640eb]
+2021-10-22 11:04:11,553 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto] is safe
+2021-10-22 11:04:11,553 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 11:04:11,566 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto] is safe
+2021-10-22 11:04:11,568 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 11:04:11,755 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto
+2021-10-22 11:04:11,755 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from privilegio_centro_costo where id =?
+2021-10-22 11:04:11,755 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select privilegio_.id, privilegio_.id_centro_costo as id_centr2_0_, privilegio_.id_usuario as id_usuar3_0_ from privilegio_centro_costo privilegio_ where privilegio_.id=?
+2021-10-22 11:04:11,756 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into privilegio_centro_costo (id_centro_costo, id_usuario, id) values (?, ?, ?)
+2021-10-22 11:04:11,756 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update privilegio_centro_costo set id_centro_costo=?, id_usuario=? where id=?
+2021-10-22 11:04:11,756 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from privilegio_centro_costo where id=?
+2021-10-22 11:04:11,781 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@550f8fa5]
+2021-10-22 11:04:11,782 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idCentroCosto
+2021-10-22 11:04:11,782 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 11:04:11,782 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:04:11,794 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:04:11,797 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - Returns
+       - EntityReturnImpl(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto, querySpaceUid=<gen:0>, path=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+          - SQL table alias mapping - privilegio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-10-22 11:04:11,799 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto [NONE]: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ae54e82]
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idCentroCosto
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - Returns
+       - EntityReturnImpl(entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto, querySpaceUid=<gen:0>, path=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto)
+          - SQL table alias mapping - privilegio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-10-22 11:04:11,800 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto [READ]: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 11:04:11,813 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 11:04:11,814 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.privilegio.centrocostoservice.model.PrivilegioCentroCosto: select privilegio0_.id as id1_0_0_, privilegio0_.id_centro_costo as id_centr2_0_0_, privilegio0_.id_usuario as id_usuar3_0_0_ from privilegio_centro_costo privilegio0_ where privilegio0_.id=?
+2021-10-22 11:04:11,831 DEBUG [main] org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator : No actions specified; doing nothing
+2021-10-22 11:04:11,831 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named HQL queries
+2021-10-22 11:04:11,831 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named SQL queries
+2021-10-22 11:04:11,833 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@3c6abec0
+2021-10-22 11:04:11,833 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Registering SessionFactory: 7751784d-f81d-4b06-80d8-71810171c574 (<unnamed>)
+2021-10-22 11:04:11,833 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Not binding SessionFactory to JNDI, no JNDI name configured
+2021-10-22 11:04:11,833 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 11:04:12,000 DEBUG [main] org.hibernate.stat.internal.StatisticsInitiator : Statistics initialized [enabled=false]
+2021-10-22 11:04:12,963 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-10-22 11:04:13,225 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-10-22 11:04:13,262 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 11:04:13,262 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 11:04:13,263 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 11:04:13,269 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 11:04:13,269 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 11:04:13,270 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-10-22 11:04:13,270 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-10-22 11:04:13,271 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-10-22 11:04:13,272 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 11:04:13,272 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2021-10-22 11:04:13,272 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 11:04:13,272 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 11:04:13,272 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 11:04:13,276 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 11:04:13,276 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 11:04:13,277 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 11:04:13,277 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 11:04:13,277 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 11:04:13,432 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-22 11:04:13,844 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService
+2021-10-22 11:04:14,236 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-10-22 11:04:14,258 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-10-22 11:04:14,295 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-10-22 11:04:14,527 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-10-22 11:04:14,533 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-10-22 11:04:14,535 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-10-22 11:04:14,538 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-10-22 11:04:14,540 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-10-22 11:04:14,542 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-10-22 11:04:14,545 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-10-22 11:04:14,548 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-10-22 11:04:14,551 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-10-22 11:04:14,554 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-10-22 11:04:14,557 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-10-22 11:04:14,559 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-10-22 11:04:14,561 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-10-22 11:04:14,564 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-10-22 11:04:14,566 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-10-22 11:04:14,569 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-10-22 11:04:14,573 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-10-22 11:04:14,576 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-10-22 11:04:14,578 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-10-22 11:04:14,580 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-10-22 11:04:14,583 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2021-10-22 11:04:14,585 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_21
+2021-10-22 11:04:14,708 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 6009 (http) with context path ''
+2021-10-22 11:04:14,713 INFO  [main] cl.privilegio.centrocostoservice.CentroCostoApplication : Started CentroCostoApplication in 13.306 seconds (JVM running for 16.835)
+2021-10-22 11:04:19,815 WARN  [registrationTask1] de.codecentric.boot.admin.client.registration.ApplicationRegistrator : Failed to register application as Application(name=centro, managementUrl=http://localhost:6009/actuator, healthUrl=http://localhost:6009/actuator/health, serviceUrl=http://localhost:6009/) at spring-boot-admin ([http://elqui.tecnova.cl:9000/instances]): I/O error on POST request for "http://elqui.tecnova.cl:9000/instances": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out. Further attempts are logged on DEBUG level
+2021-10-22 11:05:47,562 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService
+2021-10-22 11:05:47,562 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-22 11:05:47,566 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 11:05:47,566 DEBUG [Thread-7] org.hibernate.internal.SessionFactoryImpl : HHH000031: Closing
+2021-10-22 11:05:47,567 DEBUG [Thread-7] org.hibernate.type.spi.TypeConfiguration$Scope : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@288da524] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@14b640eb]
+2021-10-22 11:05:47,568 DEBUG [Thread-7] org.hibernate.service.internal.AbstractServiceRegistryImpl : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2021-10-22 11:05:47,568 DEBUG [Thread-7] org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2021-10-22 11:05:47,569 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-10-22 11:05:47,575 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

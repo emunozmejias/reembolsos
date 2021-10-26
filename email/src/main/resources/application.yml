@@ -1,0 +1,128 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: prod
+---
+spring:
+  application:
+    name: email
+  profiles: dev
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://maqui.tecnova.cl:5432/apirest?createDatabaseIfNotExist=true
+    username: apirest
+    password: Tatio2019
+    tomcat:
+     initial-size: 4
+     max-active: 4
+     max-idle: 4
+     min-idle: 4
+     max-wait: 20000
+# Spring-Admin    
+  boot:
+    admin:
+      client:
+        url:
+        -   http://elqui.tecnova.cl:9000      
+        username: admin
+        password: admin-password       
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+  mail:
+    port: 25
+    host: smtp.tecnova.cl
+    properties:
+      mail:
+        debug: true
+---
+spring:
+  application:
+    name: email
+  profiles: prod
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://algarrobo.tecnova.cl:5432/apirest?createDatabaseIfNotExist=true
+    username: apirest
+    password: Tatio2019
+    tomcat:
+     initial-size: 4
+     max-active: 4
+     max-idle: 4
+     min-idle: 4
+     max-wait: 20000
+# Spring-Admin    
+  boot:
+    admin:
+      client:
+        url:
+        -   http://elqui.tecnova.cl:9000      
+        username: admin
+        password: admin-password       
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+  mail:
+    port: 25
+    host: smtp.tecnova.cl
+    properties:
+      mail:
+        debug: true
+---
+# Logger configuration
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"    
+  level:
+    org.springframework: INFO
+    org.hibernate: DEBUG
+  file: logs/application-mail.log
+# Server configuration
+server:
+  tomcat:
+    max-threads: 3
+  port: 6008
+  sessionTimeout: 30
+  error:
+    include-stacktrace: always
+#Spring Boot Admin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"    
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+properties:
+  url.obtieneUsuariosByIds: http://localhost:6006/api/usuario/obtieneUsuariosByIds/
+  notificar.tipo1.estados: 3,9
+  notificar.tipo1.privilegio: Administracion
+  notificar.tipo1.asunto: "[REEMBOLSO]: Revisar Ingreso de Reembolso"
+  notificar.tipo1.cuerpo: "Existe un reembolso pendiente ingresado por el usuario "
+  notificar.tipo2.estados: 4,7
+  notificar.tipo2.privilegio: Gerente
+  notificar.tipo2.asunto: "[REEMBOLSO]: Revisar Solicitud Reembolso"
+  notificar.tipo2.cuerpo: "Tiene una solicitud de reembolso pendiente de Autorizar o Rechazar de: "
+  formulario.ingreso.para: "jgomez@tecnova.cl"
+  formulario.ingreso.copia: "jgomez@tecnova.cl"
+  formulario.ingreso.asunto: "[REEMBOLSO]: Revisar Formulario de Ingreso"
+  formulario.ingreso.cuerpo.1: "Tiene una solicitud de ingreso al sistema del siguiente usuario: "
+  formulario.ingreso.cuerpo.2: "- Usuario: {usuario}\n\n- Nombres: {nombres}\n\n- Apellidos: {apellidos}\n\n- Correo: {correo}\n\n- Empresa: {empresa}\n\n-Cargo: {cargo} "
+  

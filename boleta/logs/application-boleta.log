@@ -1,0 +1,1167 @@
+2021-10-22 10:35:23,011 INFO  [main] cl.tecnova.boletaservice.BoletaServiceApplication : Starting BoletaServiceApplication on MacBook-Pro-de-Elizabeth.local with PID 23232 (/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/boleta/target/classes started by emunozmejias in /Users/emunozmejias/GIT-REPOS/int002-ws_apirest/boleta)
+2021-10-22 10:35:23,019 INFO  [main] cl.tecnova.boletaservice.BoletaServiceApplication : The following profiles are active: dev
+2021-10-22 10:35:24,370 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-22 10:35:24,455 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 2 repository interfaces.
+2021-10-22 10:35:25,064 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d247413] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 10:35:25,102 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$dca4c145] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 10:35:25,534 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 6001 (http)
+2021-10-22 10:35:25,560 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-10-22 10:35:25,560 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-10-22 10:35:25,576 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-22 10:35:25,679 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-10-22 10:35:25,680 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2490 ms
+2021-10-22 10:35:26,555 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-22 10:35:26,556 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2021-10-22 10:35:26,556 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-22 10:35:26,556 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
+2021-10-22 10:35:26,556 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-22 10:35:26,556 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpTraceFilter' to: [/*]
+2021-10-22 10:35:26,556 INFO  [main] org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2021-10-22 10:35:26,559 INFO  [main] org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-10-22 10:35:26,733 DEBUG [main] org.hibernate.jpa.internal.util.LogHelper : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: java.net.URLClassLoader@76e9b50
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/boleta/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		cl.tecnova.boletaservice.model.Boleta
+		cl.tecnova.boletaservice.model.Estado
+		cl.tecnova.boletaservice.model.LogReembolsoEntity
+		cl.tecnova.boletaservice.model.Parametros
+		cl.tecnova.boletaservice.model.ParametrosPK
+		cl.tecnova.boletaservice.model.TipoBoleta]
+	Mapping files names []
+	Properties []
+2021-10-22 10:35:26,753 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-10-22 10:35:26,756 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-10-22 10:35:26,762 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-10-22 10:35:26,845 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2021-10-22 10:35:26,847 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2021-10-22 10:35:27,023 DEBUG [main] org.hibernate.service.spi.ServiceBinding : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-10-22 10:35:27,046 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-10-22 10:35:27,047 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-10-22 10:35:27,064 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-22 10:35:27,109 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@45f33819
+2021-10-22 10:35:27,110 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@45f33819
+2021-10-22 10:35:27,110 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@45f33819
+2021-10-22 10:35:27,110 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@735a9ee0
+2021-10-22 10:35:27,111 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration true_false -> org.hibernate.type.TrueFalseType@3a513975
+2021-10-22 10:35:27,112 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration yes_no -> org.hibernate.type.YesNoType@33dc888a
+2021-10-22 10:35:27,113 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@214e461c
+2021-10-22 10:35:27,114 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@214e461c
+2021-10-22 10:35:27,114 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@214e461c
+2021-10-22 10:35:27,115 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration character -> org.hibernate.type.CharacterType@32b775d9
+2021-10-22 10:35:27,115 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char -> org.hibernate.type.CharacterType@32b775d9
+2021-10-22 10:35:27,116 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@32b775d9
+2021-10-22 10:35:27,118 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@480973f6
+2021-10-22 10:35:27,118 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@480973f6
+2021-10-22 10:35:27,118 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@480973f6
+2021-10-22 10:35:27,120 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration integer -> org.hibernate.type.IntegerType@13ef3ffa
+2021-10-22 10:35:27,121 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration int -> org.hibernate.type.IntegerType@13ef3ffa
+2021-10-22 10:35:27,121 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@13ef3ffa
+2021-10-22 10:35:27,122 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@598f63e9
+2021-10-22 10:35:27,122 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@598f63e9
+2021-10-22 10:35:27,122 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Long -> org.hibernate.type.LongType@598f63e9
+2021-10-22 10:35:27,123 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@5cc12ca
+2021-10-22 10:35:27,124 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@5cc12ca
+2021-10-22 10:35:27,124 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5cc12ca
+2021-10-22 10:35:27,125 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@7ff85e1d
+2021-10-22 10:35:27,125 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@7ff85e1d
+2021-10-22 10:35:27,125 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7ff85e1d
+2021-10-22 10:35:27,127 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@13f631ab
+2021-10-22 10:35:27,127 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@13f631ab
+2021-10-22 10:35:27,128 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@498049a6
+2021-10-22 10:35:27,128 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@498049a6
+2021-10-22 10:35:27,129 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration string -> org.hibernate.type.StringType@11917a7f
+2021-10-22 10:35:27,130 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.String -> org.hibernate.type.StringType@11917a7f
+2021-10-22 10:35:27,131 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4ce7d4a3
+2021-10-22 10:35:27,132 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2ac7130f
+2021-10-22 10:35:27,133 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration url -> org.hibernate.type.UrlType@68bc522c
+2021-10-22 10:35:27,133 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.net.URL -> org.hibernate.type.UrlType@68bc522c
+2021-10-22 10:35:27,134 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Duration -> org.hibernate.type.DurationType@c73f094
+2021-10-22 10:35:27,134 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@c73f094
+2021-10-22 10:35:27,136 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Instant -> org.hibernate.type.InstantType@5f55fc6a
+2021-10-22 10:35:27,136 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5f55fc6a
+2021-10-22 10:35:27,137 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@22f3a1cd
+2021-10-22 10:35:27,137 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@22f3a1cd
+2021-10-22 10:35:27,139 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@10cd92f1
+2021-10-22 10:35:27,139 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@10cd92f1
+2021-10-22 10:35:27,140 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@118a5994
+2021-10-22 10:35:27,140 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@118a5994
+2021-10-22 10:35:27,142 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4eb384d2
+2021-10-22 10:35:27,142 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4eb384d2
+2021-10-22 10:35:27,143 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@46fc14d6
+2021-10-22 10:35:27,143 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@46fc14d6
+2021-10-22 10:35:27,147 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@533dfc5c
+2021-10-22 10:35:27,147 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@533dfc5c
+2021-10-22 10:35:27,150 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration date -> org.hibernate.type.DateType@75a79aed
+2021-10-22 10:35:27,150 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Date -> org.hibernate.type.DateType@75a79aed
+2021-10-22 10:35:27,151 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration time -> org.hibernate.type.TimeType@4c81eab4
+2021-10-22 10:35:27,151 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4c81eab4
+2021-10-22 10:35:27,153 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timestamp -> org.hibernate.type.TimestampType@340567be
+2021-10-22 10:35:27,153 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@340567be
+2021-10-22 10:35:27,153 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@340567be
+2021-10-22 10:35:27,155 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5a715e74
+2021-10-22 10:35:27,157 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar -> org.hibernate.type.CalendarType@7395c0b2
+2021-10-22 10:35:27,157 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7395c0b2
+2021-10-22 10:35:27,157 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7395c0b2
+2021-10-22 10:35:27,158 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@431092ae
+2021-10-22 10:35:27,159 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration locale -> org.hibernate.type.LocaleType@1169a6fa
+2021-10-22 10:35:27,159 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1169a6fa
+2021-10-22 10:35:27,160 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration currency -> org.hibernate.type.CurrencyType@9e9e577
+2021-10-22 10:35:27,161 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@9e9e577
+2021-10-22 10:35:27,162 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timezone -> org.hibernate.type.TimeZoneType@1b34579f
+2021-10-22 10:35:27,162 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1b34579f
+2021-10-22 10:35:27,164 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration class -> org.hibernate.type.ClassType@b4203f0
+2021-10-22 10:35:27,164 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@b4203f0
+2021-10-22 10:35:27,165 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@50b8a493
+2021-10-22 10:35:27,166 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@50b8a493
+2021-10-22 10:35:27,167 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@59bd74e4
+2021-10-22 10:35:27,168 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration binary -> org.hibernate.type.BinaryType@26fa54b9
+2021-10-22 10:35:27,168 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte[] -> org.hibernate.type.BinaryType@26fa54b9
+2021-10-22 10:35:27,169 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [B -> org.hibernate.type.BinaryType@26fa54b9
+2021-10-22 10:35:27,170 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@6615f0a5
+2021-10-22 10:35:27,170 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@6615f0a5
+2021-10-22 10:35:27,170 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@6615f0a5
+2021-10-22 10:35:27,171 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration row_version -> org.hibernate.type.RowVersionType@7f275b16
+2021-10-22 10:35:27,172 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration image -> org.hibernate.type.ImageType@51227df0
+2021-10-22 10:35:27,173 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration characters -> org.hibernate.type.CharArrayType@2e40b6a9
+2021-10-22 10:35:27,173 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char[] -> org.hibernate.type.CharArrayType@2e40b6a9
+2021-10-22 10:35:27,173 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [C -> org.hibernate.type.CharArrayType@2e40b6a9
+2021-10-22 10:35:27,175 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@290b5d06
+2021-10-22 10:35:27,175 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@290b5d06
+2021-10-22 10:35:27,175 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@290b5d06
+2021-10-22 10:35:27,175 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration text -> org.hibernate.type.TextType@e8a632e
+2021-10-22 10:35:27,176 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ntext -> org.hibernate.type.NTextType@3eae4e76
+2021-10-22 10:35:27,177 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration blob -> org.hibernate.type.BlobType@107aa099
+2021-10-22 10:35:27,177 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@107aa099
+2021-10-22 10:35:27,178 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@29e09008
+2021-10-22 10:35:27,180 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration clob -> org.hibernate.type.ClobType@14f10558
+2021-10-22 10:35:27,181 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@14f10558
+2021-10-22 10:35:27,182 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nclob -> org.hibernate.type.NClobType@7baa5eee
+2021-10-22 10:35:27,182 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7baa5eee
+2021-10-22 10:35:27,183 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1ed17670
+2021-10-22 10:35:27,183 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@252594dc
+2021-10-22 10:35:27,185 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration serializable -> org.hibernate.type.SerializableType@149d861e
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration object -> org.hibernate.type.ObjectType@290e0dd7
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@290e0dd7
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4d3bb168
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@14827dad
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@69bed648
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6238729d
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@72983f43
+2021-10-22 10:35:27,189 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@75f04ba8
+2021-10-22 10:35:27,190 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6ae3dfc8
+2021-10-22 10:35:27,190 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4beee493
+2021-10-22 10:35:27,200 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@56afb09c] into BootstrapContext; was [null]
+2021-10-22 10:35:27,200 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@56afb09c) [was null]
+2021-10-22 10:35:27,201 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@1ab26d] into BootstrapContext; was [null]
+2021-10-22 10:35:27,201 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@2b9ad9a2] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@23691f1]
+2021-10-22 10:35:27,525 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@56afb09c]
+2021-10-22 10:35:27,526 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@56afb09c]
+2021-10-22 10:35:27,540 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-10-22 10:35:27,540 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-10-22 10:35:27,541 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 10:35:27,542 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 10:35:27,542 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-10-22 10:35:27,543 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-10-22 10:35:27,544 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-10-22 10:35:27,545 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 10:35:27,547 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-10-22 10:35:27,547 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-10-22 10:35:27,548 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-10-22 10:35:27,548 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-10-22 10:35:27,548 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 10:35:27,550 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-10-22 10:35:27,556 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-10-22 10:35:27,818 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-10-22 10:35:27,825 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Database ->
+       name : PostgreSQL
+    version : 10.14
+      major : 10
+      minor : 14
+2021-10-22 10:35:27,825 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.5
+      major : 42
+      minor : 2
+2021-10-22 10:35:27,825 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : JDBC version : 4.2
+2021-10-22 10:35:27,842 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-22 10:35:32,435 DEBUG [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-10-22 10:35:32,464 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cl.tecnova.boletaservice.BoletaServiceApplication.main(BoletaServiceApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688)
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269)
+	... 50 common frames omitted
+2021-10-22 10:35:32,472 DEBUG [main] org.hibernate.boot.model.relational.Namespace : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-10-22 10:35:32,474 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@449ffac0
+2021-10-22 10:35:32,474 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@449ffac0
+2021-10-22 10:35:32,474 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@50b8a493
+2021-10-22 10:35:32,475 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@666c8f1c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@766c168]
+2021-10-22 10:35:32,549 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.tecnova.boletaservice.model.Boleta
+2021-10-22 10:35:32,574 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 10:35:32,579 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name Boleta
+2021-10-22 10:35:32,585 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.tecnova.boletaservice.model.Boleta on table boleta
+2021-10-22 10:35:32,608 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,611 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idBoleta with lazy=false
+2021-10-22 10:35:32,613 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idBoleta]
+2021-10-22 10:35:32,615 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idBoleta
+2021-10-22 10:35:32,618 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idBoleta
+2021-10-22 10:35:32,620 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_boleta)]), idBoleta, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2021-10-22 10:35:32,621 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=detalle_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,621 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property detalleBoleta with lazy=false
+2021-10-22 10:35:32,621 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:detalleBoleta]
+2021-10-22 10:35:32,621 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for detalleBoleta
+2021-10-22 10:35:32,621 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property detalleBoleta
+2021-10-22 10:35:32,622 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3JoinColumn{logicalColumnName='id_estado_boleta', referencedColumn='', mappedBy=''}
+2021-10-22 10:35:32,623 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=estado, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,625 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property estado
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=fecha_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property fechaBoleta with lazy=false
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:fechaBoleta]
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for fechaBoleta
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property fechaBoleta
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=fecha_ingreso, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property fechaIngreso with lazy=false
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:fechaIngreso]
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for fechaIngreso
+2021-10-22 10:35:32,626 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property fechaIngreso
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_centro_costo, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idCentroCosto with lazy=false
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idCentroCosto]
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idCentroCosto
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idCentroCosto
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_estado_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idEstadoBoleta with lazy=false
+2021-10-22 10:35:32,627 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idEstadoBoleta]
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idEstadoBoleta
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idEstadoBoleta
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_proyecto, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idProyecto with lazy=false
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idProyecto]
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idProyecto
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idProyecto
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_solicitud, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,628 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idSolicitud with lazy=false
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idSolicitud]
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idSolicitud
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idSolicitud
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_tipo_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idTipoBoleta with lazy=false
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idTipoBoleta]
+2021-10-22 10:35:32,629 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idTipoBoleta
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idTipoBoleta
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=id_usuario, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idUsuario with lazy=false
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:idUsuario]
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idUsuario
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idUsuario
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=monto_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property montoBoleta with lazy=false
+2021-10-22 10:35:32,630 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:montoBoleta]
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for montoBoleta
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property montoBoleta
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=numero_documento, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property numeroDocumento with lazy=false
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:numeroDocumento]
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for numeroDocumento
+2021-10-22 10:35:32,631 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property numeroDocumento
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=observacion, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property observacion with lazy=false
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Boleta:observacion]
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for observacion
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property observacion
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3JoinColumn{logicalColumnName='id_tipo_boleta', referencedColumn='', mappedBy=''}
+2021-10-22 10:35:32,632 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(boleta), mappingColumn=tipo_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,633 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property tipoBoleta
+2021-10-22 10:35:32,633 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.tecnova.boletaservice.model.LogReembolsoEntity
+2021-10-22 10:35:32,636 DEBUG [main] org.hibernate.cfg.annotations.QueryBinder : Binding named query: LogReembolsoEntity.findAll => SELECT l FROM LogReembolsoEntity l
+2021-10-22 10:35:32,636 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 10:35:32,636 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name LogReembolsoEntity
+2021-10-22 10:35:32,637 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.tecnova.boletaservice.model.LogReembolsoEntity on table log_reembolso
+2021-10-22 10:35:32,639 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=id_log, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,640 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idLog with lazy=false
+2021-10-22 10:35:32,640 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:idLog]
+2021-10-22 10:35:32,640 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idLog
+2021-10-22 10:35:32,640 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idLog
+2021-10-22 10:35:32,641 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_log)]), idLog, org.hibernate.id.enhanced.SequenceStyleGenerator, LOG_REEMBOLSO_IDLOG_GENERATOR, ...)
+2021-10-22 10:35:32,642 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=fecha, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,642 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property fecha with lazy=false
+2021-10-22 10:35:32,642 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:fecha]
+2021-10-22 10:35:32,643 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for fecha
+2021-10-22 10:35:32,643 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property fecha
+2021-10-22 10:35:32,643 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=id_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,643 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idBoleta with lazy=false
+2021-10-22 10:35:32,643 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:idBoleta]
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idBoleta
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idBoleta
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=id_solicitud, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idSolicitud with lazy=false
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:idSolicitud]
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idSolicitud
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idSolicitud
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=log_antes, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property logAntes with lazy=false
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:logAntes]
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for logAntes
+2021-10-22 10:35:32,644 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property logAntes
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=log_despues, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property logDespues with lazy=false
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:logDespues]
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for logDespues
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property logDespues
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=usuario, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property usuario with lazy=false
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.LogReembolsoEntity:usuario]
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for usuario
+2021-10-22 10:35:32,645 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property usuario
+2021-10-22 10:35:32,646 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:32,646 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 10:35:32,646 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name TipoBoleta
+2021-10-22 10:35:32,646 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.tecnova.boletaservice.model.TipoBoleta on table tipo_boleta
+2021-10-22 10:35:32,647 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tipo_boleta), mappingColumn=id_tipo, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,647 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idTipo with lazy=false
+2021-10-22 10:35:32,647 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.TipoBoleta:idTipo]
+2021-10-22 10:35:32,647 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idTipo
+2021-10-22 10:35:32,647 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idTipo
+2021-10-22 10:35:32,647 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_tipo)]), idTipo, assigned, , ...)
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tipo_boleta), mappingColumn=descripcion, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property descripcion with lazy=false
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.TipoBoleta:descripcion]
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for descripcion
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property descripcion
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.tecnova.boletaservice.model.Parametros
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name Parametros
+2021-10-22 10:35:32,648 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.tecnova.boletaservice.model.Parametros on table parametros
+2021-10-22 10:35:32,649 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parametros), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parametros), mappingColumn=par_codigo, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property codigo with lazy=false
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Parametros.id:codigo]
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for codigo
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property codigo
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parametros), mappingColumn=par_tipo, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property tipo with lazy=false
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Parametros.id:tipo]
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for tipo
+2021-10-22 10:35:32,653 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property tipo
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.Component([org.hibernate.mapping.Property(codigo), org.hibernate.mapping.Property(tipo)]), id, assigned, , ...)
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parametros), mappingColumn=par_descripcion, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property descripcion with lazy=false
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Parametros:descripcion]
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for descripcion
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property descripcion
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parametros), mappingColumn=par_orden, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,654 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property orden with lazy=false
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Parametros:orden]
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for orden
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property orden
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parametros), mappingColumn=par_vigencia, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property vigencia with lazy=false
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Parametros:vigencia]
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for vigencia
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property vigencia
+2021-10-22 10:35:32,655 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name Estado
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.tecnova.boletaservice.model.Estado on table estado
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(estado), mappingColumn=id_estado, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idEstado with lazy=false
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Estado:idEstado]
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idEstado
+2021-10-22 10:35:32,656 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idEstado
+2021-10-22 10:35:32,657 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_estado)]), idEstado, assigned, , ...)
+2021-10-22 10:35:32,657 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(estado), mappingColumn=descripcion, insertable=true, updatable=true, unique=false}
+2021-10-22 10:35:32,657 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property descripcion with lazy=false
+2021-10-22 10:35:32,657 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.boletaservice.model.Estado:descripcion]
+2021-10-22 10:35:32,657 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for descripcion
+2021-10-22 10:35:32,657 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property descripcion
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idBoleta
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for detalleBoleta
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for fechaBoleta
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for fechaIngreso
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idCentroCosto
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idEstadoBoleta
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idProyecto
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idSolicitud
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idTipoBoleta
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idUsuario
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for montoBoleta
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for numeroDocumento
+2021-10-22 10:35:32,658 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for observacion
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idLog
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for fecha
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idBoleta
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idSolicitud
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for logAntes
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for logDespues
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for usuario
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idTipo
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for descripcion
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for codigo
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for tipo
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for descripcion
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for orden
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for vigencia
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idEstado
+2021-10-22 10:35:32,659 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for descripcion
+2021-10-22 10:35:32,663 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_boleta] to be non-null as it is part of the primary key for table [boleta]
+2021-10-22 10:35:32,663 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_log] to be non-null as it is part of the primary key for table [log_reembolso]
+2021-10-22 10:35:32,663 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_tipo] to be non-null as it is part of the primary key for table [tipo_boleta]
+2021-10-22 10:35:32,664 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [par_codigo] to be non-null as it is part of the primary key for table [parametros]
+2021-10-22 10:35:32,664 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [par_tipo] to be non-null as it is part of the primary key for table [parametros]
+2021-10-22 10:35:32,664 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_estado] to be non-null as it is part of the primary key for table [estado]
+2021-10-22 10:35:32,664 DEBUG [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:32,666 DEBUG [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:32,667 DEBUG [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:32,667 DEBUG [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:32,675 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Parametros] is safe
+2021-10-22 10:35:32,676 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Parametros
+2021-10-22 10:35:32,728 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Building session factory
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : SessionFactory name : null
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Automatic flush during beforeCompletion(): enabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Automatic session close at end of transaction: disabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Statistics: disabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Deleted entity synthetic identifier rollback: disabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Default entity-mode: pojo
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Allow initialization of lazy state outside session : disabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Using BatchFetchStyle : LEGACY
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Default batch fetch size: -1
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Maximum outer join fetch depth: null
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Default null ordering: NONE
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Order SQL updates by primary key: disabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Order SQL inserts for batching: disabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : multi-tenancy strategy : NONE
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : JTA Track by Thread: enabled
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Query language substitutions: {}
+2021-10-22 10:35:32,730 DEBUG [main] org.hibernate.cfg.Settings : Named query checking : enabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache factory: null
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache region prefix: null
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Optimize second-level cache for minimal puts: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Structured second-level cache entries: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache direct-reference entries: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Automatic eviction of collection cache: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch size: 15
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch updates for versioned data: enabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Scrollable result sets: enabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Wrap result sets: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC3 getGeneratedKeys(): enabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : JDBC result set fetch size: null
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Connection release mode: ON_CLOSE
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : Generate SQL with comments: disabled
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - query : 
+2021-10-22 10:35:32,731 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - closed-handling : 
+2021-10-22 10:35:32,732 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - lists : 
+2021-10-22 10:35:32,732 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - transactions : 
+2021-10-22 10:35:32,803 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Session factory constructed with filter configurations : {}
+2021-10-22 10:35:32,803 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@7f600140, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=America/Santiago, user.country.format=CL, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=ES, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -B spring-boot:run, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@6953f6ca, javax.persistence.sharedCache.mode=UNSPECIFIED, maven.home=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/boleta/EMBEDDED, sun.cpu.endian=little, user.home=/Users/emunozmejias, user.language=es, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_121-b13, user.name=emunozmejias, path.separator=:, os.version=10.16, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, FILE_LOG_PATTERN=%d %-5level [%thread] %logger : %msg%n, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/application-boleta.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/, catalina.home=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.6772865409105001451.6001, java.version=1.8.0_121, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/boleta, os.arch=x86_64, maven.multiModuleProjectDirectory=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/boleta, PID=23232, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.6772865409105001451.6001, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@392a55c5, java.library.path=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.121-b13, classworlds.conf=/Users/emunozmejias/eclipse-workspace-reembolso/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7039803698395001123.tmp, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0, CONSOLE_LOG_PATTERN=%d %-5level %logger : %msg%n}
+2021-10-22 10:35:32,822 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 10:35:32,822 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 10:35:32,822 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 10:35:32,822 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 10:35:32,823 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 10:35:32,823 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 10:35:32,826 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 10:35:32,827 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 10:35:32,827 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 10:35:32,827 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 10:35:32,827 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 10:35:32,827 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 10:35:32,828 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Boleta] is safe
+2021-10-22 10:35:32,828 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Boleta
+2021-10-22 10:35:32,867 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.LogReembolsoEntity] is safe
+2021-10-22 10:35:32,867 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.LogReembolsoEntity
+2021-10-22 10:35:32,871 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.TipoBoleta] is safe
+2021-10-22 10:35:32,871 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:32,873 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Parametros] is safe
+2021-10-22 10:35:32,873 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Parametros
+2021-10-22 10:35:32,875 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Estado] is safe
+2021-10-22 10:35:32,875 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:32,878 DEBUG [main] org.hibernate.secure.spi.JaccIntegrator : Skipping JACC integration as it was not enabled
+2021-10-22 10:35:32,878 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiated session factory
+2021-10-22 10:35:32,878 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@666c8f1c] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@2c0c8908]
+2021-10-22 10:35:32,919 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Boleta] is safe
+2021-10-22 10:35:32,920 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Boleta
+2021-10-22 10:35:32,928 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Boleta] is safe
+2021-10-22 10:35:32,928 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Boleta
+2021-10-22 10:35:33,191 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.LogReembolsoEntity] is safe
+2021-10-22 10:35:33,191 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.LogReembolsoEntity
+2021-10-22 10:35:33,192 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.LogReembolsoEntity] is safe
+2021-10-22 10:35:33,192 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.LogReembolsoEntity
+2021-10-22 10:35:33,205 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.TipoBoleta] is safe
+2021-10-22 10:35:33,205 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:33,205 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.TipoBoleta] is safe
+2021-10-22 10:35:33,205 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:33,213 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Parametros] is safe
+2021-10-22 10:35:33,213 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Parametros
+2021-10-22 10:35:33,221 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Estado] is safe
+2021-10-22 10:35:33,221 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:33,221 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.boletaservice.model.Estado] is safe
+2021-10-22 10:35:33,221 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:33,233 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.tecnova.boletaservice.model.Boleta
+2021-10-22 10:35:33,233 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_boleta from boleta where id_boleta =?
+2021-10-22 10:35:33,233 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select boleta_.id_boleta, boleta_.detalle_boleta as detalle_2_0_, boleta_.fecha_boleta as fecha_bo3_0_, boleta_.fecha_ingreso as fecha_in4_0_, boleta_.id_centro_costo as id_centr5_0_, boleta_.id_estado_boleta as id_estad6_0_, boleta_.id_proyecto as id_proye7_0_, boleta_.id_solicitud as id_solic8_0_, boleta_.id_tipo_boleta as id_tipo_9_0_, boleta_.id_usuario as id_usua10_0_, boleta_.monto_boleta as monto_b11_0_, boleta_.numero_documento as numero_12_0_, boleta_.observacion as observa13_0_ from boleta boleta_ where boleta_.id_boleta=?
+2021-10-22 10:35:33,233 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into boleta (detalle_boleta, fecha_boleta, fecha_ingreso, id_centro_costo, id_estado_boleta, id_proyecto, id_solicitud, id_tipo_boleta, id_usuario, monto_boleta, numero_documento, observacion, id_boleta) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-10-22 10:35:33,233 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update boleta set detalle_boleta=?, fecha_boleta=?, fecha_ingreso=?, id_centro_costo=?, id_estado_boleta=?, id_proyecto=?, id_solicitud=?, id_tipo_boleta=?, id_usuario=?, monto_boleta=?, numero_documento=?, observacion=? where id_boleta=?
+2021-10-22 10:35:33,233 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from boleta where id_boleta=?
+2021-10-22 10:35:33,266 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72a2a1ab]
+2021-10-22 10:35:33,268 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : detalleBoleta
+2021-10-22 10:35:33,268 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado
+2021-10-22 10:35:33,273 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@78925400]
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado.descripcion
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaBoleta
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaIngreso
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idCentroCosto
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idEstadoBoleta
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idProyecto
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idSolicitud
+2021-10-22 10:35:33,274 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idTipoBoleta
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : montoBoleta
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : numeroDocumento
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : observacion
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : tipoBoleta
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ab3e2a2]
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : tipoBoleta.descripcion
+2021-10-22 10:35:33,275 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,291 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,296 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.Boleta)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.Boleta, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.Boleta)
+          - EntityAttributeFetchImpl(entity=cl.tecnova.boletaservice.model.Estado, querySpaceUid=<gen:1>, path=cl.tecnova.boletaservice.model.Boleta.estado)
+          - EntityAttributeFetchImpl(entity=cl.tecnova.boletaservice.model.TipoBoleta, querySpaceUid=<gen:2>, path=cl.tecnova.boletaservice.model.Boleta.tipoBoleta)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.Boleta)
+          - SQL table alias mapping - boleta0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_bolet1_0_0_}
+          - JOIN (JoinDefinedByMetadata(estado)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cl.tecnova.boletaservice.model.Estado)
+                - SQL table alias mapping - estado1_
+                - alias suffix - 1_
+                - suffixed key columns - {id_estad1_1_1_}
+          - JOIN (JoinDefinedByMetadata(tipoBoleta)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=cl.tecnova.boletaservice.model.TipoBoleta)
+                - SQL table alias mapping - tipoboleta2_
+                - alias suffix - 2_
+                - suffixed key columns - {id_tipo1_4_2_}
+
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.Boleta [NONE]: select boleta0_.id_boleta as id_bolet1_0_0_, boleta0_.detalle_boleta as detalle_2_0_0_, boleta0_.id_estado_boleta as id_estad6_0_0_, boleta0_.fecha_boleta as fecha_bo3_0_0_, boleta0_.fecha_ingreso as fecha_in4_0_0_, boleta0_.id_centro_costo as id_centr5_0_0_, boleta0_.id_proyecto as id_proye7_0_0_, boleta0_.id_solicitud as id_solic8_0_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_0_, boleta0_.id_usuario as id_usua10_0_0_, boleta0_.monto_boleta as monto_b11_0_0_, boleta0_.numero_documento as numero_12_0_0_, boleta0_.observacion as observa13_0_0_, estado1_.id_estado as id_estad1_1_1_, estado1_.descripcion as descripc2_1_1_, tipoboleta2_.id_tipo as id_tipo1_4_2_, tipoboleta2_.descripcion as descripc2_4_2_ from boleta boleta0_ left outer join estado estado1_ on boleta0_.id_estado_boleta=estado1_.id_estado left outer join tipo_boleta tipoboleta2_ on boleta0_.id_tipo_boleta=tipoboleta2_.id_tipo where boleta0_.id_boleta=?
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@395e446c]
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : detalleBoleta
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4064c94f]
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado.descripcion
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaBoleta
+2021-10-22 10:35:33,298 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaIngreso
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idCentroCosto
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idEstadoBoleta
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idProyecto
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idSolicitud
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idTipoBoleta
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : montoBoleta
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : numeroDocumento
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : observacion
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : tipoBoleta
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@158f82c3]
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : tipoBoleta.descripcion
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,299 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,300 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.Boleta)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.Boleta, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.Boleta)
+          - EntityAttributeFetchImpl(entity=cl.tecnova.boletaservice.model.Estado, querySpaceUid=<gen:1>, path=cl.tecnova.boletaservice.model.Boleta.estado)
+          - EntityAttributeFetchImpl(entity=cl.tecnova.boletaservice.model.TipoBoleta, querySpaceUid=<gen:2>, path=cl.tecnova.boletaservice.model.Boleta.tipoBoleta)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.Boleta)
+          - SQL table alias mapping - boleta0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_bolet1_0_0_}
+          - JOIN (JoinDefinedByMetadata(estado)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cl.tecnova.boletaservice.model.Estado)
+                - SQL table alias mapping - estado1_
+                - alias suffix - 1_
+                - suffixed key columns - {id_estad1_1_1_}
+          - JOIN (JoinDefinedByMetadata(tipoBoleta)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=cl.tecnova.boletaservice.model.TipoBoleta)
+                - SQL table alias mapping - tipoboleta2_
+                - alias suffix - 2_
+                - suffixed key columns - {id_tipo1_4_2_}
+
+2021-10-22 10:35:33,300 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.Boleta [READ]: select boleta0_.id_boleta as id_bolet1_0_0_, boleta0_.detalle_boleta as detalle_2_0_0_, boleta0_.id_estado_boleta as id_estad6_0_0_, boleta0_.fecha_boleta as fecha_bo3_0_0_, boleta0_.fecha_ingreso as fecha_in4_0_0_, boleta0_.id_centro_costo as id_centr5_0_0_, boleta0_.id_proyecto as id_proye7_0_0_, boleta0_.id_solicitud as id_solic8_0_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_0_, boleta0_.id_usuario as id_usua10_0_0_, boleta0_.monto_boleta as monto_b11_0_0_, boleta0_.numero_documento as numero_12_0_0_, boleta0_.observacion as observa13_0_0_, estado1_.id_estado as id_estad1_1_1_, estado1_.descripcion as descripc2_1_1_, tipoboleta2_.id_tipo as id_tipo1_4_2_, tipoboleta2_.descripcion as descripc2_4_2_ from boleta boleta0_ left outer join estado estado1_ on boleta0_.id_estado_boleta=estado1_.id_estado left outer join tipo_boleta tipoboleta2_ on boleta0_.id_tipo_boleta=tipoboleta2_.id_tipo where boleta0_.id_boleta=?
+2021-10-22 10:35:33,313 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.tecnova.boletaservice.model.Boleta: select boleta0_.id_boleta as id_bolet1_0_0_, boleta0_.detalle_boleta as detalle_2_0_0_, boleta0_.id_estado_boleta as id_estad6_0_0_, boleta0_.fecha_boleta as fecha_bo3_0_0_, boleta0_.fecha_ingreso as fecha_in4_0_0_, boleta0_.id_centro_costo as id_centr5_0_0_, boleta0_.id_proyecto as id_proye7_0_0_, boleta0_.id_solicitud as id_solic8_0_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_0_, boleta0_.id_usuario as id_usua10_0_0_, boleta0_.monto_boleta as monto_b11_0_0_, boleta0_.numero_documento as numero_12_0_0_, boleta0_.observacion as observa13_0_0_ from boleta boleta0_ where boleta0_.id_boleta=?
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.tecnova.boletaservice.model.Boleta: select boleta0_.id_boleta as id_bolet1_0_0_, boleta0_.detalle_boleta as detalle_2_0_0_, boleta0_.id_estado_boleta as id_estad6_0_0_, boleta0_.fecha_boleta as fecha_bo3_0_0_, boleta0_.fecha_ingreso as fecha_in4_0_0_, boleta0_.id_centro_costo as id_centr5_0_0_, boleta0_.id_proyecto as id_proye7_0_0_, boleta0_.id_solicitud as id_solic8_0_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_0_, boleta0_.id_usuario as id_usua10_0_0_, boleta0_.monto_boleta as monto_b11_0_0_, boleta0_.numero_documento as numero_12_0_0_, boleta0_.observacion as observa13_0_0_ from boleta boleta0_ where boleta0_.id_boleta=?
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.tecnova.boletaservice.model.LogReembolsoEntity
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_log from log_reembolso where id_log =?
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select logreembol_.id_log, logreembol_.fecha as fecha2_2_, logreembol_.id_boleta as id_bolet3_2_, logreembol_.id_solicitud as id_solic4_2_, logreembol_.log_antes as log_ante5_2_, logreembol_.log_despues as log_desp6_2_, logreembol_.usuario as usuario7_2_ from log_reembolso logreembol_ where logreembol_.id_log=?
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into log_reembolso (fecha, id_boleta, id_solicitud, log_antes, log_despues, usuario, id_log) values (?, ?, ?, ?, ?, ?, ?)
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update log_reembolso set fecha=?, id_boleta=?, id_solicitud=?, log_antes=?, log_despues=?, usuario=? where id_log=?
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from log_reembolso where id_log=?
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72817b98]
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fecha
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idBoleta
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idSolicitud
+2021-10-22 10:35:33,314 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logAntes
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logDespues
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : usuario
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.LogReembolsoEntity)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.LogReembolsoEntity, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.LogReembolsoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.LogReembolsoEntity)
+          - SQL table alias mapping - logreembol0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_log1_2_0_}
+
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.LogReembolsoEntity [NONE]: select logreembol0_.id_log as id_log1_2_0_, logreembol0_.fecha as fecha2_2_0_, logreembol0_.id_boleta as id_bolet3_2_0_, logreembol0_.id_solicitud as id_solic4_2_0_, logreembol0_.log_antes as log_ante5_2_0_, logreembol0_.log_despues as log_desp6_2_0_, logreembol0_.usuario as usuario7_2_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@24712c2f]
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fecha
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idBoleta
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idSolicitud
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logAntes
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logDespues
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : usuario
+2021-10-22 10:35:33,315 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.LogReembolsoEntity)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.LogReembolsoEntity, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.LogReembolsoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.LogReembolsoEntity)
+          - SQL table alias mapping - logreembol0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_log1_2_0_}
+
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.LogReembolsoEntity [READ]: select logreembol0_.id_log as id_log1_2_0_, logreembol0_.fecha as fecha2_2_0_, logreembol0_.id_boleta as id_bolet3_2_0_, logreembol0_.id_solicitud as id_solic4_2_0_, logreembol0_.log_antes as log_ante5_2_0_, logreembol0_.log_despues as log_desp6_2_0_, logreembol0_.usuario as usuario7_2_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.tecnova.boletaservice.model.LogReembolsoEntity: select logreembol0_.id_log as id_log1_2_0_, logreembol0_.fecha as fecha2_2_0_, logreembol0_.id_boleta as id_bolet3_2_0_, logreembol0_.id_solicitud as id_solic4_2_0_, logreembol0_.log_antes as log_ante5_2_0_, logreembol0_.log_despues as log_desp6_2_0_, logreembol0_.usuario as usuario7_2_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.tecnova.boletaservice.model.LogReembolsoEntity: select logreembol0_.id_log as id_log1_2_0_, logreembol0_.fecha as fecha2_2_0_, logreembol0_.id_boleta as id_bolet3_2_0_, logreembol0_.id_solicitud as id_solic4_2_0_, logreembol0_.log_antes as log_ante5_2_0_, logreembol0_.log_despues as log_desp6_2_0_, logreembol0_.usuario as usuario7_2_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.tecnova.boletaservice.model.TipoBoleta
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_tipo from tipo_boleta where id_tipo =?
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select tipoboleta_.id_tipo, tipoboleta_.descripcion as descripc2_4_ from tipo_boleta tipoboleta_ where tipoboleta_.id_tipo=?
+2021-10-22 10:35:33,316 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into tipo_boleta (descripcion, id_tipo) values (?, ?)
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update tipo_boleta set descripcion=? where id_tipo=?
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from tipo_boleta where id_tipo=?
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68251805]
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.TipoBoleta)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.TipoBoleta, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.TipoBoleta)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.TipoBoleta)
+          - SQL table alias mapping - tipoboleta0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_tipo1_4_0_}
+
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.TipoBoleta [NONE]: select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3841cadc]
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,317 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.TipoBoleta)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.TipoBoleta, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.TipoBoleta)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.TipoBoleta)
+          - SQL table alias mapping - tipoboleta0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_tipo1_4_0_}
+
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.TipoBoleta [READ]: select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.tecnova.boletaservice.model.TipoBoleta: select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.tecnova.boletaservice.model.TipoBoleta: select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.tecnova.boletaservice.model.Parametros
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select par_codigo, par_tipo from parametros where par_codigo =? and par_tipo =?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select parametros_.par_codigo, parametros_.par_tipo, parametros_.par_descripcion as par_desc3_3_, parametros_.par_orden as par_orde4_3_, parametros_.par_vigencia as par_vige5_3_ from parametros parametros_ where parametros_.par_codigo=? and parametros_.par_tipo=?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into parametros (par_descripcion, par_orden, par_vigencia, par_codigo, par_tipo) values (?, ?, ?, ?, ?)
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update parametros set par_descripcion=?, par_orden=?, par_vigencia=? where par_codigo=? and par_tipo=?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from parametros where par_codigo=? and par_tipo=?
+2021-10-22 10:35:33,318 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@661b31fc]
+2021-10-22 10:35:33,319 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@6f2a86c1]
+2021-10-22 10:35:33,322 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : codigo
+2021-10-22 10:35:33,322 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : tipo
+2021-10-22 10:35:33,322 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 10:35:33,322 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : orden
+2021-10-22 10:35:33,322 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : vigencia
+2021-10-22 10:35:33,322 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.Parametros)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.Parametros, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.Parametros)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.Parametros)
+          - SQL table alias mapping - parametros0_
+          - alias suffix - 0_
+          - suffixed key columns - {par_codi1_3_0_, par_tipo2_3_0_}
+          - JOIN (JoinDefinedByMetadata(id)) : <gen:0> -> <gen:0>-id
+             - CompositeQuerySpaceImpl(uid=<gen:0>-id)
+                - SQL table alias mapping - parametros0_
+
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.Parametros [NONE]: select parametros0_.par_codigo as par_codi1_3_0_, parametros0_.par_tipo as par_tipo2_3_0_, parametros0_.par_descripcion as par_desc3_3_0_, parametros0_.par_orden as par_orde4_3_0_, parametros0_.par_vigencia as par_vige5_3_0_ from parametros parametros0_ where parametros0_.par_codigo=? and parametros0_.par_tipo=?
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1fee3db8]
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@34f6e709]
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : codigo
+2021-10-22 10:35:33,323 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : tipo
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : orden
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : vigencia
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.Parametros)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.Parametros, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.Parametros)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.Parametros)
+          - SQL table alias mapping - parametros0_
+          - alias suffix - 0_
+          - suffixed key columns - {par_codi1_3_0_, par_tipo2_3_0_}
+          - JOIN (JoinDefinedByMetadata(id)) : <gen:0> -> <gen:0>-id
+             - CompositeQuerySpaceImpl(uid=<gen:0>-id)
+                - SQL table alias mapping - parametros0_
+
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.Parametros [READ]: select parametros0_.par_codigo as par_codi1_3_0_, parametros0_.par_tipo as par_tipo2_3_0_, parametros0_.par_descripcion as par_desc3_3_0_, parametros0_.par_orden as par_orde4_3_0_, parametros0_.par_vigencia as par_vige5_3_0_ from parametros parametros0_ where parametros0_.par_codigo=? and parametros0_.par_tipo=?
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.tecnova.boletaservice.model.Parametros: select parametros0_.par_codigo as par_codi1_3_0_, parametros0_.par_tipo as par_tipo2_3_0_, parametros0_.par_descripcion as par_desc3_3_0_, parametros0_.par_orden as par_orde4_3_0_, parametros0_.par_vigencia as par_vige5_3_0_ from parametros parametros0_ where parametros0_.par_codigo=? and parametros0_.par_tipo=?
+2021-10-22 10:35:33,324 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.tecnova.boletaservice.model.Parametros: select parametros0_.par_codigo as par_codi1_3_0_, parametros0_.par_tipo as par_tipo2_3_0_, parametros0_.par_descripcion as par_desc3_3_0_, parametros0_.par_orden as par_orde4_3_0_, parametros0_.par_vigencia as par_vige5_3_0_ from parametros parametros0_ where parametros0_.par_codigo=? and parametros0_.par_tipo=?
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.tecnova.boletaservice.model.Estado
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_estado from estado where id_estado =?
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select estado_.id_estado, estado_.descripcion as descripc2_1_ from estado estado_ where estado_.id_estado=?
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into estado (descripcion, id_estado) values (?, ?)
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update estado set descripcion=? where id_estado=?
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from estado where id_estado=?
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2cded5d1]
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.Estado)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.Estado, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.Estado)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.Estado)
+          - SQL table alias mapping - estado0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_estad1_1_0_}
+
+2021-10-22 10:35:33,325 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.Estado [NONE]: select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@feaf76c]
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.boletaservice.model.Estado)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.boletaservice.model.Estado, querySpaceUid=<gen:0>, path=cl.tecnova.boletaservice.model.Estado)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.boletaservice.model.Estado)
+          - SQL table alias mapping - estado0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_estad1_1_0_}
+
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.boletaservice.model.Estado [READ]: select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.tecnova.boletaservice.model.Estado: select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:33,326 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.tecnova.boletaservice.model.Estado: select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:33,348 DEBUG [main] org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator : No actions specified; doing nothing
+2021-10-22 10:35:33,349 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 1 named HQL queries
+2021-10-22 10:35:33,349 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking named query: LogReembolsoEntity.findAll
+2021-10-22 10:35:33,354 DEBUG [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@28fb76e9
+2021-10-22 10:35:33,355 INFO  [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory
+2021-10-22 10:35:33,385 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: SELECT l FROM cl.tecnova.boletaservice.model.LogReembolsoEntity l
+2021-10-22 10:35:33,392 DEBUG [main] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:33,397 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'tecnova'
+       |     |  |  |  \-[IDENT] Node: 'boletaservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'LogReembolsoEntity'
+       |     \-[ALIAS] Node: 'l'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'l'
+
+2021-10-22 10:35:33,422 DEBUG [main] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 10:35:33,437 DEBUG [main] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.tecnova.boletaservice.model.LogReembolsoEntity (l) -> logreembol0_
+2021-10-22 10:35:33,438 DEBUG [main] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : l -> logreembol0_.id_log
+2021-10-22 10:35:33,440 DEBUG [main] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 10:35:33,440 DEBUG [main] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} logreembol0_.id_log ) ( FromClause{level=1} log_reembolso logreembol0_ ) )
+2021-10-22 10:35:33,450 DEBUG [main] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [log_reembolso logreembol0_]
+2021-10-22 10:35:33,450 DEBUG [main] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 10:35:33,451 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (log_reembolso)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'logreembol0_.id_log as id_log1_2_' {alias=l, className=cl.tecnova.boletaservice.model.LogReembolsoEntity, tableAlias=logreembol0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'logreembol0_.fecha as fecha2_2_, logreembol0_.id_boleta as id_bolet3_2_, logreembol0_.id_solicitud as id_solic4_2_, logreembol0_.log_antes as log_ante5_2_, logreembol0_.log_despues as log_desp6_2_, logreembol0_.usuario as usuario7_2_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[l], fromElementByTableAlias=[logreembol0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'log_reembolso logreembol0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=l,role=null,tableName=log_reembolso,tableAlias=logreembol0_,origin=null,columns={,className=cl.tecnova.boletaservice.model.LogReembolsoEntity}}
+
+2021-10-22 10:35:33,451 DEBUG [main] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:33,458 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: SELECT l FROM cl.tecnova.boletaservice.model.LogReembolsoEntity l
+2021-10-22 10:35:33,458 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select logreembol0_.id_log as id_log1_2_, logreembol0_.fecha as fecha2_2_, logreembol0_.id_boleta as id_bolet3_2_, logreembol0_.id_solicitud as id_solic4_2_, logreembol0_.log_antes as log_ante5_2_, logreembol0_.log_despues as log_desp6_2_, logreembol0_.usuario as usuario7_2_ from log_reembolso logreembol0_
+2021-10-22 10:35:33,458 DEBUG [main] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:33,461 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named SQL queries
+2021-10-22 10:35:33,462 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@50deda33
+2021-10-22 10:35:33,463 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Registering SessionFactory: 565dade9-21df-45f8-8b02-3e9434d5f5b1 (<unnamed>)
+2021-10-22 10:35:33,463 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Not binding SessionFactory to JNDI, no JNDI name configured
+2021-10-22 10:35:33,463 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 10:35:33,645 DEBUG [main] org.hibernate.stat.internal.StatisticsInitiator : Statistics initialized [enabled=false]
+2021-10-22 10:35:33,817 DEBUG [main] org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-22 10:35:33,889 DEBUG [main] org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-22 10:35:34,759 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-10-22 10:35:35,004 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-10-22 10:35:35,043 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 10:35:35,043 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 10:35:35,043 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 10:35:35,049 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 10:35:35,049 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 10:35:35,050 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-10-22 10:35:35,050 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-10-22 10:35:35,051 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-10-22 10:35:35,052 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 10:35:35,052 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2021-10-22 10:35:35,052 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 10:35:35,053 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 10:35:35,053 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 10:35:35,057 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 10:35:35,057 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 10:35:35,057 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 10:35:35,057 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 10:35:35,057 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 10:35:35,208 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-22 10:35:35,651 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService
+2021-10-22 10:35:35,988 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-10-22 10:35:36,014 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-10-22 10:35:36,054 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-10-22 10:35:36,301 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: obtieneBoletaByIdUsuarioUsingGET_1
+2021-10-22 10:35:36,318 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-10-22 10:35:36,319 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-10-22 10:35:36,323 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-10-22 10:35:36,325 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-10-22 10:35:36,327 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-10-22 10:35:36,328 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-10-22 10:35:36,330 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-10-22 10:35:36,331 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-10-22 10:35:36,333 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-10-22 10:35:36,335 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-10-22 10:35:36,336 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-10-22 10:35:36,338 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-10-22 10:35:36,340 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-10-22 10:35:36,342 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-10-22 10:35:36,344 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-10-22 10:35:36,346 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-10-22 10:35:36,350 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-10-22 10:35:36,352 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-10-22 10:35:36,354 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-10-22 10:35:36,356 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-10-22 10:35:36,357 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2021-10-22 10:35:36,359 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_21
+2021-10-22 10:35:36,419 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 6001 (http) with context path ''
+2021-10-22 10:35:36,422 INFO  [main] cl.tecnova.boletaservice.BoletaServiceApplication : Started BoletaServiceApplication in 14.122 seconds (JVM running for 18.052)
+2021-10-22 10:35:41,523 WARN  [registrationTask1] de.codecentric.boot.admin.client.registration.ApplicationRegistrator : Failed to register application as Application(name=boleta, managementUrl=http://localhost:6001/actuator, healthUrl=http://localhost:6001/actuator/health, serviceUrl=http://localhost:6001/) at spring-boot-admin ([http://elqui.tecnova.cl:9000/instances]): I/O error on POST request for "http://elqui.tecnova.cl:9000/instances": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out. Further attempts are logged on DEBUG level
+2021-10-22 10:35:45,763 INFO  [http-nio-6001-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 10:35:45,763 INFO  [http-nio-6001-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-10-22 10:35:45,788 INFO  [http-nio-6001-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 25 ms
+2021-10-22 10:35:52,859 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-22 10:35:52,859 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.transaction.internal.TransactionImpl : begin
+2021-10-22 10:35:52,868 DEBUG [http-nio-6001-exec-2] org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select generatedAlias0 from Boleta as generatedAlias0
+2021-10-22 10:35:52,879 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select generatedAlias0 from cl.tecnova.boletaservice.model.Boleta as generatedAlias0
+2021-10-22 10:35:52,881 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:52,881 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'tecnova'
+       |     |  |  |  \-[IDENT] Node: 'boletaservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Boleta'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2021-10-22 10:35:52,881 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 10:35:52,881 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.tecnova.boletaservice.model.Boleta (generatedAlias0) -> boleta0_
+2021-10-22 10:35:52,881 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> boleta0_.id_boleta
+2021-10-22 10:35:52,882 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 10:35:52,882 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} boleta0_.id_boleta ) ( FromClause{level=1} boleta boleta0_ ) )
+2021-10-22 10:35:52,882 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [boleta boleta0_]
+2021-10-22 10:35:52,882 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 10:35:52,882 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (boleta)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'boleta0_.id_boleta as id_bolet1_0_' {alias=generatedAlias0, className=cl.tecnova.boletaservice.model.Boleta, tableAlias=boleta0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'boleta0_.detalle_boleta as detalle_2_0_, boleta0_.id_estado_boleta as id_estad6_0_, boleta0_.fecha_boleta as fecha_bo3_0_, boleta0_.fecha_ingreso as fecha_in4_0_, boleta0_.id_centro_costo as id_centr5_0_, boleta0_.id_proyecto as id_proye7_0_, boleta0_.id_solicitud as id_solic8_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_, boleta0_.id_usuario as id_usua10_0_, boleta0_.monto_boleta as monto_b11_0_, boleta0_.numero_documento as numero_12_0_, boleta0_.observacion as observa13_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[boleta0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'boleta boleta0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=boleta,tableAlias=boleta0_,origin=null,columns={,className=cl.tecnova.boletaservice.model.Boleta}}
+
+2021-10-22 10:35:52,883 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:52,883 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select generatedAlias0 from cl.tecnova.boletaservice.model.Boleta as generatedAlias0
+2021-10-22 10:35:52,883 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select boleta0_.id_boleta as id_bolet1_0_, boleta0_.detalle_boleta as detalle_2_0_, boleta0_.id_estado_boleta as id_estad6_0_, boleta0_.fecha_boleta as fecha_bo3_0_, boleta0_.fecha_ingreso as fecha_in4_0_, boleta0_.id_centro_costo as id_centr5_0_, boleta0_.id_proyecto as id_proye7_0_, boleta0_.id_solicitud as id_solic8_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_, boleta0_.id_usuario as id_usua10_0_, boleta0_.monto_boleta as monto_b11_0_, boleta0_.numero_documento as numero_12_0_, boleta0_.observacion as observa13_0_ from boleta boleta0_
+2021-10-22 10:35:52,883 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:52,916 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select boleta0_.id_boleta as id_bolet1_0_, boleta0_.detalle_boleta as detalle_2_0_, boleta0_.id_estado_boleta as id_estad6_0_, boleta0_.fecha_boleta as fecha_bo3_0_, boleta0_.fecha_ingreso as fecha_in4_0_, boleta0_.id_centro_costo as id_centr5_0_, boleta0_.id_proyecto as id_proye7_0_, boleta0_.id_solicitud as id_solic8_0_, boleta0_.id_tipo_boleta as id_tipo_9_0_, boleta0_.id_usuario as id_usua10_0_, boleta0_.monto_boleta as monto_b11_0_, boleta0_.numero_documento as numero_12_0_, boleta0_.observacion as observa13_0_ from boleta boleta0_ limit ?
+2021-10-22 10:35:52,946 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 0
+2021-10-22 10:35:52,949 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#565]
+2021-10-22 10:35:52,958 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 1
+2021-10-22 10:35:52,958 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#670]
+2021-10-22 10:35:52,958 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 2
+2021-10-22 10:35:52,958 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#669]
+2021-10-22 10:35:52,958 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 3
+2021-10-22 10:35:52,958 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#572]
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 4
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#573]
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 5
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#788]
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 6
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#564]
+2021-10-22 10:35:52,959 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 7
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#23]
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 8
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#54]
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 9
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#55]
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 10
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#98]
+2021-10-22 10:35:52,960 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 11
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#99]
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 12
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#100]
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 13
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#30]
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 14
+2021-10-22 10:35:52,961 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#64]
+2021-10-22 10:35:52,962 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 15
+2021-10-22 10:35:52,962 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#68]
+2021-10-22 10:35:52,962 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 16
+2021-10-22 10:35:52,963 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#101]
+2021-10-22 10:35:52,963 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 17
+2021-10-22 10:35:52,963 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#102]
+2021-10-22 10:35:52,963 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 18
+2021-10-22 10:35:52,963 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#692]
+2021-10-22 10:35:52,964 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 19
+2021-10-22 10:35:52,964 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: EntityKey[cl.tecnova.boletaservice.model.Boleta#107]
+2021-10-22 10:35:52,965 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#565]
+2021-10-22 10:35:52,968 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:53,001 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,002 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,003 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Estado#4]
+2021-10-22 10:35:53,004 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Estado#4]
+2021-10-22 10:35:53,004 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,004 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.Estado#4
+2021-10-22 10:35:53,004 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:53,050 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,050 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,051 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.TipoBoleta#1]
+2021-10-22 10:35:53,051 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.TipoBoleta#1]
+2021-10-22 10:35:53,051 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,051 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.TipoBoleta#1
+2021-10-22 10:35:53,052 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#565]
+2021-10-22 10:35:53,052 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#670]
+2021-10-22 10:35:53,052 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:53,072 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,072 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.TipoBoleta#2]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.TipoBoleta#2]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.TipoBoleta#2
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#670]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#669]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#669]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#572]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#572]
+2021-10-22 10:35:53,073 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#573]
+2021-10-22 10:35:53,074 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select tipoboleta0_.id_tipo as id_tipo1_4_0_, tipoboleta0_.descripcion as descripc2_4_0_ from tipo_boleta tipoboleta0_ where tipoboleta0_.id_tipo=?
+2021-10-22 10:35:53,083 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,083 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.TipoBoleta#7]
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.TipoBoleta#7]
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.TipoBoleta#7
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#573]
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#788]
+2021-10-22 10:35:53,084 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:53,095 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,095 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,095 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Estado#1]
+2021-10-22 10:35:53,096 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Estado#1]
+2021-10-22 10:35:53,096 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,096 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.Estado#1
+2021-10-22 10:35:53,096 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#788]
+2021-10-22 10:35:53,096 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#564]
+2021-10-22 10:35:53,097 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#564]
+2021-10-22 10:35:53,097 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#23]
+2021-10-22 10:35:53,097 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:53,107 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,107 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Estado#2]
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Estado#2]
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.Estado#2
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#23]
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#54]
+2021-10-22 10:35:53,108 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:53,119 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,119 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,119 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Estado#3]
+2021-10-22 10:35:53,119 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Estado#3]
+2021-10-22 10:35:53,119 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,119 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.Estado#3
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#54]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#55]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#55]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#98]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#98]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#99]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#99]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#100]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#100]
+2021-10-22 10:35:53,120 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#30]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#30]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#64]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#64]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#68]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#68]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#101]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#101]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#102]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#102]
+2021-10-22 10:35:53,121 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#692]
+2021-10-22 10:35:53,122 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select estado0_.id_estado as id_estad1_1_0_, estado0_.descripcion as descripc2_1_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 10:35:53,133 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 10:35:53,133 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 10:35:53,133 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Estado#6]
+2021-10-22 10:35:53,133 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Estado#6]
+2021-10-22 10:35:53,134 DEBUG [http-nio-6001-exec-2] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 10:35:53,134 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.tecnova.boletaservice.model.Estado#6
+2021-10-22 10:35:53,134 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#692]
+2021-10-22 10:35:53,134 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.tecnova.boletaservice.model.Boleta#107]
+2021-10-22 10:35:53,134 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.tecnova.boletaservice.model.Boleta#107]
+2021-10-22 10:35:53,141 DEBUG [http-nio-6001-exec-2] org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select count(generatedAlias0) from Boleta as generatedAlias0
+2021-10-22 10:35:53,141 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select count(generatedAlias0) from cl.tecnova.boletaservice.model.Boleta as generatedAlias0
+2021-10-22 10:35:53,141 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:53,142 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'tecnova'
+       |     |  |  |  \-[IDENT] Node: 'boletaservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Boleta'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[COUNT] Node: 'count'
+             \-[IDENT] Node: 'generatedAlias0'
+
+2021-10-22 10:35:53,142 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 10:35:53,142 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.tecnova.boletaservice.model.Boleta (generatedAlias0) -> boleta0_
+2021-10-22 10:35:53,143 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> boleta0_.id_boleta
+2021-10-22 10:35:53,143 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 10:35:53,143 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} ( count boleta0_.id_boleta ) ) ( FromClause{level=1} boleta boleta0_ ) )
+2021-10-22 10:35:53,143 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [boleta boleta0_]
+2021-10-22 10:35:53,143 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 10:35:53,144 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (boleta)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'count'
+    |  |  \-[ALIAS_REF] IdentNode: 'boleta0_.id_boleta' {alias=generatedAlias0, className=cl.tecnova.boletaservice.model.Boleta, tableAlias=boleta0_}
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[boleta0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'boleta boleta0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=boleta,tableAlias=boleta0_,origin=null,columns={,className=cl.tecnova.boletaservice.model.Boleta}}
+
+2021-10-22 10:35:53,144 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:53,144 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select count(generatedAlias0) from cl.tecnova.boletaservice.model.Boleta as generatedAlias0
+2021-10-22 10:35:53,144 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select count(boleta0_.id_boleta) as col_0_0_ from boleta boleta0_
+2021-10-22 10:35:53,144 DEBUG [http-nio-6001-exec-2] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 10:35:53,144 DEBUG [http-nio-6001-exec-2] org.hibernate.SQL : select count(boleta0_.id_boleta) as col_0_0_ from boleta boleta0_
+2021-10-22 10:35:53,161 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result set row: 0
+2021-10-22 10:35:53,161 DEBUG [http-nio-6001-exec-2] org.hibernate.loader.Loader : Result row: 
+2021-10-22 10:35:53,164 DEBUG [http-nio-6001-exec-2] org.hibernate.engine.transaction.internal.TransactionImpl : committing
+2021-10-22 10:35:57,534 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService
+2021-10-22 10:35:57,535 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-22 10:35:57,539 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 10:35:57,539 DEBUG [Thread-7] org.hibernate.internal.SessionFactoryImpl : HHH000031: Closing
+2021-10-22 10:35:57,540 DEBUG [Thread-7] org.hibernate.type.spi.TypeConfiguration$Scope : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@796a497c] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2c0c8908]
+2021-10-22 10:35:57,541 DEBUG [Thread-7] org.hibernate.service.internal.AbstractServiceRegistryImpl : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2021-10-22 10:35:57,541 DEBUG [Thread-7] org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2021-10-22 10:35:57,542 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-10-22 10:35:57,546 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

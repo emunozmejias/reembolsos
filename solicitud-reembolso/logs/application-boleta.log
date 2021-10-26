@@ -1,0 +1,919 @@
+2021-10-22 11:33:54,636 INFO  [main] cl.solicitud.reembolsoservice.ReembolsoServiceApplication : Starting ReembolsoServiceApplication on MacBook-Pro-de-Elizabeth.local with PID 24363 (/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/solicitud-reembolso/target/classes started by emunozmejias in /Users/emunozmejias/GIT-REPOS/int002-ws_apirest/solicitud-reembolso)
+2021-10-22 11:33:54,639 INFO  [main] cl.solicitud.reembolsoservice.ReembolsoServiceApplication : The following profiles are active: dev
+2021-10-22 11:33:56,070 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-22 11:33:56,160 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 2 repository interfaces.
+2021-10-22 11:33:56,786 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$feffc2e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 11:33:56,821 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7e801017] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-22 11:33:57,304 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 6002 (http)
+2021-10-22 11:33:57,332 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-10-22 11:33:57,332 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-10-22 11:33:57,351 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-22 11:33:57,456 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-10-22 11:33:57,456 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2768 ms
+2021-10-22 11:33:58,699 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-22 11:33:58,699 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2021-10-22 11:33:58,700 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-22 11:33:58,700 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
+2021-10-22 11:33:58,700 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-22 11:33:58,700 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpTraceFilter' to: [/*]
+2021-10-22 11:33:58,700 INFO  [main] org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2021-10-22 11:33:58,703 INFO  [main] org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-10-22 11:33:58,895 DEBUG [main] org.hibernate.jpa.internal.util.LogHelper : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: java.net.URLClassLoader@246f2547
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/solicitud-reembolso/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		cl.solicitud.reembolsoservice.model.Estado
+		cl.solicitud.reembolsoservice.model.LogReembolsoEntity
+		cl.solicitud.reembolsoservice.model.SolicitudReembolso]
+	Mapping files names []
+	Properties []
+2021-10-22 11:33:58,918 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-10-22 11:33:58,921 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-10-22 11:33:58,928 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-10-22 11:33:59,019 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2021-10-22 11:33:59,021 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2021-10-22 11:33:59,206 DEBUG [main] org.hibernate.service.spi.ServiceBinding : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-10-22 11:33:59,230 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-10-22 11:33:59,232 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-10-22 11:33:59,248 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-22 11:33:59,295 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@6effab83
+2021-10-22 11:33:59,296 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@6effab83
+2021-10-22 11:33:59,296 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6effab83
+2021-10-22 11:33:59,296 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@14f72cf1
+2021-10-22 11:33:59,297 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration true_false -> org.hibernate.type.TrueFalseType@4e4f0154
+2021-10-22 11:33:59,298 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration yes_no -> org.hibernate.type.YesNoType@6e148478
+2021-10-22 11:33:59,299 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@1061328a
+2021-10-22 11:33:59,299 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@1061328a
+2021-10-22 11:33:59,299 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1061328a
+2021-10-22 11:33:59,301 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration character -> org.hibernate.type.CharacterType@130f2390
+2021-10-22 11:33:59,301 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char -> org.hibernate.type.CharacterType@130f2390
+2021-10-22 11:33:59,301 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@130f2390
+2021-10-22 11:33:59,303 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@672045d0
+2021-10-22 11:33:59,303 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@672045d0
+2021-10-22 11:33:59,303 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@672045d0
+2021-10-22 11:33:59,304 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration integer -> org.hibernate.type.IntegerType@13f6023a
+2021-10-22 11:33:59,304 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration int -> org.hibernate.type.IntegerType@13f6023a
+2021-10-22 11:33:59,304 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@13f6023a
+2021-10-22 11:33:59,305 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@2e9fc32b
+2021-10-22 11:33:59,305 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@2e9fc32b
+2021-10-22 11:33:59,306 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Long -> org.hibernate.type.LongType@2e9fc32b
+2021-10-22 11:33:59,306 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@3110d516
+2021-10-22 11:33:59,307 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@3110d516
+2021-10-22 11:33:59,307 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3110d516
+2021-10-22 11:33:59,308 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@2ccc4df3
+2021-10-22 11:33:59,308 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@2ccc4df3
+2021-10-22 11:33:59,308 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@2ccc4df3
+2021-10-22 11:33:59,309 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@a669c4a
+2021-10-22 11:33:59,309 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@a669c4a
+2021-10-22 11:33:59,310 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5a39ded2
+2021-10-22 11:33:59,311 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5a39ded2
+2021-10-22 11:33:59,312 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration string -> org.hibernate.type.StringType@4fd2b1cb
+2021-10-22 11:33:59,312 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.String -> org.hibernate.type.StringType@4fd2b1cb
+2021-10-22 11:33:59,312 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@14063bd9
+2021-10-22 11:33:59,313 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6ef7f711
+2021-10-22 11:33:59,314 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration url -> org.hibernate.type.UrlType@21801a09
+2021-10-22 11:33:59,314 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.net.URL -> org.hibernate.type.UrlType@21801a09
+2021-10-22 11:33:59,315 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Duration -> org.hibernate.type.DurationType@224e14e
+2021-10-22 11:33:59,315 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@224e14e
+2021-10-22 11:33:59,317 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Instant -> org.hibernate.type.InstantType@348e7438
+2021-10-22 11:33:59,317 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@348e7438
+2021-10-22 11:33:59,318 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@67be9a37
+2021-10-22 11:33:59,318 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@67be9a37
+2021-10-22 11:33:59,319 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@603aa7e3
+2021-10-22 11:33:59,319 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@603aa7e3
+2021-10-22 11:33:59,321 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3e123d8c
+2021-10-22 11:33:59,321 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3e123d8c
+2021-10-22 11:33:59,322 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4f9c840e
+2021-10-22 11:33:59,322 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4f9c840e
+2021-10-22 11:33:59,323 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@72f27f83
+2021-10-22 11:33:59,324 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@72f27f83
+2021-10-22 11:33:59,326 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@25a19a45
+2021-10-22 11:33:59,326 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@25a19a45
+2021-10-22 11:33:59,328 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration date -> org.hibernate.type.DateType@29eed041
+2021-10-22 11:33:59,328 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Date -> org.hibernate.type.DateType@29eed041
+2021-10-22 11:33:59,329 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration time -> org.hibernate.type.TimeType@336f78ca
+2021-10-22 11:33:59,329 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@336f78ca
+2021-10-22 11:33:59,330 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timestamp -> org.hibernate.type.TimestampType@17143913
+2021-10-22 11:33:59,330 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@17143913
+2021-10-22 11:33:59,331 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@17143913
+2021-10-22 11:33:59,332 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7def7961
+2021-10-22 11:33:59,333 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar -> org.hibernate.type.CalendarType@74afcf6b
+2021-10-22 11:33:59,333 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@74afcf6b
+2021-10-22 11:33:59,333 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@74afcf6b
+2021-10-22 11:33:59,334 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@756b468c
+2021-10-22 11:33:59,335 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration locale -> org.hibernate.type.LocaleType@5a8eaba4
+2021-10-22 11:33:59,335 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5a8eaba4
+2021-10-22 11:33:59,336 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration currency -> org.hibernate.type.CurrencyType@634385fc
+2021-10-22 11:33:59,336 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@634385fc
+2021-10-22 11:33:59,337 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timezone -> org.hibernate.type.TimeZoneType@707cd685
+2021-10-22 11:33:59,337 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@707cd685
+2021-10-22 11:33:59,338 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration class -> org.hibernate.type.ClassType@6ba826fe
+2021-10-22 11:33:59,338 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6ba826fe
+2021-10-22 11:33:59,339 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@44b888be
+2021-10-22 11:33:59,339 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@44b888be
+2021-10-22 11:33:59,340 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5545b9cd
+2021-10-22 11:33:59,341 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration binary -> org.hibernate.type.BinaryType@483f89b6
+2021-10-22 11:33:59,341 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte[] -> org.hibernate.type.BinaryType@483f89b6
+2021-10-22 11:33:59,341 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [B -> org.hibernate.type.BinaryType@483f89b6
+2021-10-22 11:33:59,342 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@659d9951
+2021-10-22 11:33:59,343 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@659d9951
+2021-10-22 11:33:59,343 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@659d9951
+2021-10-22 11:33:59,344 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration row_version -> org.hibernate.type.RowVersionType@1dcc55a5
+2021-10-22 11:33:59,344 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration image -> org.hibernate.type.ImageType@68f6039c
+2021-10-22 11:33:59,345 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration characters -> org.hibernate.type.CharArrayType@525eac26
+2021-10-22 11:33:59,345 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char[] -> org.hibernate.type.CharArrayType@525eac26
+2021-10-22 11:33:59,345 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [C -> org.hibernate.type.CharArrayType@525eac26
+2021-10-22 11:33:59,346 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@46ed5f46
+2021-10-22 11:33:59,347 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@46ed5f46
+2021-10-22 11:33:59,347 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@46ed5f46
+2021-10-22 11:33:59,347 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration text -> org.hibernate.type.TextType@f00ae2c
+2021-10-22 11:33:59,348 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ntext -> org.hibernate.type.NTextType@35c9f58d
+2021-10-22 11:33:59,349 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration blob -> org.hibernate.type.BlobType@4b2951a9
+2021-10-22 11:33:59,349 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4b2951a9
+2021-10-22 11:33:59,350 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@61ab779a
+2021-10-22 11:33:59,352 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration clob -> org.hibernate.type.ClobType@3049b0d5
+2021-10-22 11:33:59,352 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3049b0d5
+2021-10-22 11:33:59,353 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nclob -> org.hibernate.type.NClobType@5580f7e4
+2021-10-22 11:33:59,353 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5580f7e4
+2021-10-22 11:33:59,354 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@b587850
+2021-10-22 11:33:59,355 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@39e4c819
+2021-10-22 11:33:59,356 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration serializable -> org.hibernate.type.SerializableType@4c24582a
+2021-10-22 11:33:59,360 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration object -> org.hibernate.type.ObjectType@22491b95
+2021-10-22 11:33:59,360 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@22491b95
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4752dd7b
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2d2de3b7
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2ac1139a
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@535913b4
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2b1a5a1
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@40c3ce1b
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@62bc585a
+2021-10-22 11:33:59,361 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@79e3230a
+2021-10-22 11:33:59,372 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@27a12bdf] into BootstrapContext; was [null]
+2021-10-22 11:33:59,372 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@27a12bdf) [was null]
+2021-10-22 11:33:59,373 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@68617b60] into BootstrapContext; was [null]
+2021-10-22 11:33:59,373 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@46b04a60] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@21b1f69a]
+2021-10-22 11:33:59,435 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@27a12bdf]
+2021-10-22 11:33:59,435 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@27a12bdf]
+2021-10-22 11:33:59,449 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-10-22 11:33:59,449 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-10-22 11:33:59,451 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 11:33:59,451 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-22 11:33:59,451 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-10-22 11:33:59,452 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-10-22 11:33:59,453 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-10-22 11:33:59,454 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 11:33:59,455 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-10-22 11:33:59,456 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-10-22 11:33:59,457 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-10-22 11:33:59,457 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-10-22 11:33:59,457 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-22 11:33:59,458 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-10-22 11:33:59,465 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-10-22 11:33:59,691 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-10-22 11:33:59,699 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Database ->
+       name : PostgreSQL
+    version : 10.14
+      major : 10
+      minor : 14
+2021-10-22 11:33:59,699 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.5
+      major : 42
+      minor : 2
+2021-10-22 11:33:59,699 DEBUG [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : JDBC version : 4.2
+2021-10-22 11:33:59,717 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-22 11:34:03,888 DEBUG [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-10-22 11:34:03,927 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cl.solicitud.reembolsoservice.ReembolsoServiceApplication.main(ReembolsoServiceApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:688)
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1269)
+	... 50 common frames omitted
+2021-10-22 11:34:03,935 DEBUG [main] org.hibernate.boot.model.relational.Namespace : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-10-22 11:34:03,936 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@53efeb1a
+2021-10-22 11:34:03,937 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@53efeb1a
+2021-10-22 11:34:03,937 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@44b888be
+2021-10-22 11:34:03,938 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7b85002c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@76e9d333]
+2021-10-22 11:34:04,005 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.solicitud.reembolsoservice.model.SolicitudReembolso
+2021-10-22 11:34:04,030 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 11:34:04,036 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name SolicitudReembolso
+2021-10-22 11:34:04,042 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.solicitud.reembolsoservice.model.SolicitudReembolso on table solicitud_reembolso
+2021-10-22 11:34:04,068 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(solicitud_reembolso), mappingColumn=id_solicitud, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,071 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idSolicitud with lazy=false
+2021-10-22 11:34:04,073 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.SolicitudReembolso:idSolicitud]
+2021-10-22 11:34:04,076 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idSolicitud
+2021-10-22 11:34:04,079 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idSolicitud
+2021-10-22 11:34:04,082 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_solicitud)]), idSolicitud, org.hibernate.id.enhanced.SequenceStyleGenerator, sequence_solicitud, ...)
+2021-10-22 11:34:04,085 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3JoinColumn{logicalColumnName='id_estado_reembolso', referencedColumn='', mappedBy=''}
+2021-10-22 11:34:04,085 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(solicitud_reembolso), mappingColumn=estado, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,088 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property estado
+2021-10-22 11:34:04,088 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(solicitud_reembolso), mappingColumn=fecha_solicitud, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,088 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property fechaSolicitud with lazy=false
+2021-10-22 11:34:04,088 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.SolicitudReembolso:fechaSolicitud]
+2021-10-22 11:34:04,088 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for fechaSolicitud
+2021-10-22 11:34:04,088 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property fechaSolicitud
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(solicitud_reembolso), mappingColumn=id_estado_reembolso, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idEstadoReembolso with lazy=false
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.SolicitudReembolso:idEstadoReembolso]
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idEstadoReembolso
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idEstadoReembolso
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(solicitud_reembolso), mappingColumn=id_usuario, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,089 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idUsuario with lazy=false
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.SolicitudReembolso:idUsuario]
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idUsuario
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idUsuario
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(solicitud_reembolso), mappingColumn=observacion, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property observacion with lazy=false
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.SolicitudReembolso:observacion]
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for observacion
+2021-10-22 11:34:04,090 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property observacion
+2021-10-22 11:34:04,091 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,092 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 11:34:04,092 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name Estado
+2021-10-22 11:34:04,092 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.solicitud.reembolsoservice.model.Estado on table estado
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(estado), mappingColumn=id_estado, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idEstado with lazy=false
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.Estado:idEstado]
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idEstado
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idEstado
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_estado)]), idEstado, assigned, , ...)
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(estado), mappingColumn=descripcion, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,093 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property descripcion with lazy=false
+2021-10-22 11:34:04,094 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.Estado:descripcion]
+2021-10-22 11:34:04,094 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for descripcion
+2021-10-22 11:34:04,094 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property descripcion
+2021-10-22 11:34:04,094 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.solicitud.reembolsoservice.model.LogReembolsoEntity
+2021-10-22 11:34:04,097 DEBUG [main] org.hibernate.cfg.annotations.QueryBinder : Binding named query: LogReembolsoEntity.findAll => SELECT l FROM LogReembolsoEntity l
+2021-10-22 11:34:04,097 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-22 11:34:04,097 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name LogReembolsoEntity
+2021-10-22 11:34:04,097 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.solicitud.reembolsoservice.model.LogReembolsoEntity on table log_reembolso
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=id_log, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idLog with lazy=false
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:idLog]
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idLog
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idLog
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id_log)]), idLog, org.hibernate.id.enhanced.SequenceStyleGenerator, LOG_REEMBOLSO_IDLOG_GENERATOR, ...)
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=fecha, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property fecha with lazy=false
+2021-10-22 11:34:04,100 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:fecha]
+2021-10-22 11:34:04,101 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for fecha
+2021-10-22 11:34:04,101 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property fecha
+2021-10-22 11:34:04,101 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=hora_log, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,101 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property horaLog with lazy=false
+2021-10-22 11:34:04,101 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:horaLog]
+2021-10-22 11:34:04,102 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for horaLog
+2021-10-22 11:34:04,102 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property horaLog
+2021-10-22 11:34:04,102 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=id_boleta, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,102 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idBoleta with lazy=false
+2021-10-22 11:34:04,102 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:idBoleta]
+2021-10-22 11:34:04,103 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idBoleta
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idBoleta
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=id_solicitud, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idSolicitud with lazy=false
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:idSolicitud]
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idSolicitud
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idSolicitud
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=log_antes, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,104 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property logAntes with lazy=false
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:logAntes]
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for logAntes
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property logAntes
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=log_despues, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property logDespues with lazy=false
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:logDespues]
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for logDespues
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property logDespues
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(log_reembolso), mappingColumn=usuario, insertable=true, updatable=true, unique=false}
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property usuario with lazy=false
+2021-10-22 11:34:04,105 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.solicitud.reembolsoservice.model.LogReembolsoEntity:usuario]
+2021-10-22 11:34:04,106 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for usuario
+2021-10-22 11:34:04,106 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property usuario
+2021-10-22 11:34:04,107 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idSolicitud
+2021-10-22 11:34:04,107 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for fechaSolicitud
+2021-10-22 11:34:04,107 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idEstadoReembolso
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idUsuario
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for observacion
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idEstado
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for descripcion
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idLog
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for fecha
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for horaLog
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idBoleta
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idSolicitud
+2021-10-22 11:34:04,108 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for logAntes
+2021-10-22 11:34:04,109 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for logDespues
+2021-10-22 11:34:04,109 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for usuario
+2021-10-22 11:34:04,113 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_solicitud] to be non-null as it is part of the primary key for table [solicitud_reembolso]
+2021-10-22 11:34:04,113 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_estado] to be non-null as it is part of the primary key for table [estado]
+2021-10-22 11:34:04,113 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id_log] to be non-null as it is part of the primary key for table [log_reembolso]
+2021-10-22 11:34:04,113 DEBUG [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,116 DEBUG [main] org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,155 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Building session factory
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : SessionFactory name : null
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Automatic flush during beforeCompletion(): enabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Automatic session close at end of transaction: disabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Statistics: disabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Deleted entity synthetic identifier rollback: disabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Default entity-mode: pojo
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Allow initialization of lazy state outside session : disabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Using BatchFetchStyle : LEGACY
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Default batch fetch size: -1
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Maximum outer join fetch depth: null
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Default null ordering: NONE
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Order SQL updates by primary key: disabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : Order SQL inserts for batching: disabled
+2021-10-22 11:34:04,156 DEBUG [main] org.hibernate.cfg.Settings : multi-tenancy strategy : NONE
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : JTA Track by Thread: enabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Query language substitutions: {}
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Named query checking : enabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache factory: null
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache region prefix: null
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Optimize second-level cache for minimal puts: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Structured second-level cache entries: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache direct-reference entries: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Automatic eviction of collection cache: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch size: 15
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch updates for versioned data: enabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Scrollable result sets: enabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : Wrap result sets: disabled
+2021-10-22 11:34:04,157 DEBUG [main] org.hibernate.cfg.Settings : JDBC3 getGeneratedKeys(): enabled
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : JDBC result set fetch size: null
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : Connection release mode: ON_CLOSE
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : Generate SQL with comments: disabled
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - query : 
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - closed-handling : 
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - lists : 
+2021-10-22 11:34:04,158 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - transactions : 
+2021-10-22 11:34:04,226 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Session factory constructed with filter configurations : {}
+2021-10-22 11:34:04,227 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@589fe0cb, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=America/Santiago, user.country.format=CL, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=ES, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -B spring-boot:run, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@570bc84e, javax.persistence.sharedCache.mode=UNSPECIFIED, maven.home=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/solicitud-reembolso/EMBEDDED, sun.cpu.endian=little, user.home=/Users/emunozmejias, user.language=es, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_121-b13, user.name=emunozmejias, path.separator=:, os.version=10.16, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, FILE_LOG_PATTERN=%d %-5level [%thread] %logger : %msg%n, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/application-boleta.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/, catalina.home=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.9045020302898702246.6002, java.version=1.8.0_121, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/solicitud-reembolso, os.arch=x86_64, maven.multiModuleProjectDirectory=/Users/emunozmejias/GIT-REPOS/int002-ws_apirest/solicitud-reembolso, PID=24363, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.9045020302898702246.6002, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@74e7ebe4, java.library.path=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.121-b13, classworlds.conf=/Users/emunozmejias/eclipse-workspace-reembolso/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2226813703660425591.tmp, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0, CONSOLE_LOG_PATTERN=%d %-5level %logger : %msg%n}
+2021-10-22 11:34:04,249 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 11:34:04,249 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 11:34:04,249 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 11:34:04,249 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 11:34:04,250 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 11:34:04,250 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 11:34:04,253 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 11:34:04,254 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 11:34:04,254 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 11:34:04,254 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 11:34:04,254 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 11:34:04,254 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 11:34:04,255 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.SolicitudReembolso] is safe
+2021-10-22 11:34:04,256 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.SolicitudReembolso
+2021-10-22 11:34:04,293 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.Estado] is safe
+2021-10-22 11:34:04,294 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,296 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.LogReembolsoEntity] is safe
+2021-10-22 11:34:04,296 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.LogReembolsoEntity
+2021-10-22 11:34:04,300 DEBUG [main] org.hibernate.secure.spi.JaccIntegrator : Skipping JACC integration as it was not enabled
+2021-10-22 11:34:04,301 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiated session factory
+2021-10-22 11:34:04,301 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7b85002c] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@738578ba]
+2021-10-22 11:34:04,348 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.SolicitudReembolso] is safe
+2021-10-22 11:34:04,348 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.SolicitudReembolso
+2021-10-22 11:34:04,369 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.SolicitudReembolso] is safe
+2021-10-22 11:34:04,369 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.SolicitudReembolso
+2021-10-22 11:34:04,609 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.Estado] is safe
+2021-10-22 11:34:04,609 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,609 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.Estado] is safe
+2021-10-22 11:34:04,609 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,618 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.LogReembolsoEntity] is safe
+2021-10-22 11:34:04,618 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.LogReembolsoEntity
+2021-10-22 11:34:04,619 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.solicitud.reembolsoservice.model.LogReembolsoEntity] is safe
+2021-10-22 11:34:04,619 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.solicitud.reembolsoservice.model.LogReembolsoEntity
+2021-10-22 11:34:04,639 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.solicitud.reembolsoservice.model.SolicitudReembolso
+2021-10-22 11:34:04,640 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_solicitud from solicitud_reembolso where id_solicitud =?
+2021-10-22 11:34:04,640 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select solicitudr_.id_solicitud, solicitudr_.fecha_solicitud as fecha_so2_2_, solicitudr_.id_estado_reembolso as id_estad3_2_, solicitudr_.id_usuario as id_usuar4_2_, solicitudr_.observacion as observac5_2_ from solicitud_reembolso solicitudr_ where solicitudr_.id_solicitud=?
+2021-10-22 11:34:04,640 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into solicitud_reembolso (fecha_solicitud, id_estado_reembolso, id_usuario, observacion, id_solicitud) values (?, ?, ?, ?, ?)
+2021-10-22 11:34:04,640 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update solicitud_reembolso set fecha_solicitud=?, id_estado_reembolso=?, id_usuario=?, observacion=? where id_solicitud=?
+2021-10-22 11:34:04,640 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from solicitud_reembolso where id_solicitud=?
+2021-10-22 11:34:04,672 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41b0a1d2]
+2021-10-22 11:34:04,674 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado
+2021-10-22 11:34:04,678 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5227a473]
+2021-10-22 11:34:04,679 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado.descripcion
+2021-10-22 11:34:04,679 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaSolicitud
+2021-10-22 11:34:04,679 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idEstadoReembolso
+2021-10-22 11:34:04,679 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 11:34:04,679 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : observacion
+2021-10-22 11:34:04,680 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:34:04,693 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:34:04,697 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.solicitud.reembolsoservice.model.SolicitudReembolso)
+    - Returns
+       - EntityReturnImpl(entity=cl.solicitud.reembolsoservice.model.SolicitudReembolso, querySpaceUid=<gen:0>, path=cl.solicitud.reembolsoservice.model.SolicitudReembolso)
+          - EntityAttributeFetchImpl(entity=cl.solicitud.reembolsoservice.model.Estado, querySpaceUid=<gen:1>, path=cl.solicitud.reembolsoservice.model.SolicitudReembolso.estado)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.solicitud.reembolsoservice.model.SolicitudReembolso)
+          - SQL table alias mapping - solicitudr0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_solic1_2_0_}
+          - JOIN (JoinDefinedByMetadata(estado)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cl.solicitud.reembolsoservice.model.Estado)
+                - SQL table alias mapping - estado1_
+                - alias suffix - 1_
+                - suffixed key columns - {id_estad1_0_1_}
+
+2021-10-22 11:34:04,699 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.solicitud.reembolsoservice.model.SolicitudReembolso [NONE]: select solicitudr0_.id_solicitud as id_solic1_2_0_, solicitudr0_.id_estado_reembolso as id_estad3_2_0_, solicitudr0_.fecha_solicitud as fecha_so2_2_0_, solicitudr0_.id_usuario as id_usuar4_2_0_, solicitudr0_.observacion as observac5_2_0_, estado1_.id_estado as id_estad1_0_1_, estado1_.descripcion as descripc2_0_1_ from solicitud_reembolso solicitudr0_ left outer join estado estado1_ on solicitudr0_.id_estado_reembolso=estado1_.id_estado where solicitudr0_.id_solicitud=?
+2021-10-22 11:34:04,699 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@601feaa2]
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7de59a6e]
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : estado.descripcion
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaSolicitud
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idEstadoReembolso
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : observacion
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:34:04,700 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:34:04,701 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.solicitud.reembolsoservice.model.SolicitudReembolso)
+    - Returns
+       - EntityReturnImpl(entity=cl.solicitud.reembolsoservice.model.SolicitudReembolso, querySpaceUid=<gen:0>, path=cl.solicitud.reembolsoservice.model.SolicitudReembolso)
+          - EntityAttributeFetchImpl(entity=cl.solicitud.reembolsoservice.model.Estado, querySpaceUid=<gen:1>, path=cl.solicitud.reembolsoservice.model.SolicitudReembolso.estado)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.solicitud.reembolsoservice.model.SolicitudReembolso)
+          - SQL table alias mapping - solicitudr0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_solic1_2_0_}
+          - JOIN (JoinDefinedByMetadata(estado)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=cl.solicitud.reembolsoservice.model.Estado)
+                - SQL table alias mapping - estado1_
+                - alias suffix - 1_
+                - suffixed key columns - {id_estad1_0_1_}
+
+2021-10-22 11:34:04,701 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.solicitud.reembolsoservice.model.SolicitudReembolso [READ]: select solicitudr0_.id_solicitud as id_solic1_2_0_, solicitudr0_.id_estado_reembolso as id_estad3_2_0_, solicitudr0_.fecha_solicitud as fecha_so2_2_0_, solicitudr0_.id_usuario as id_usuar4_2_0_, solicitudr0_.observacion as observac5_2_0_, estado1_.id_estado as id_estad1_0_1_, estado1_.descripcion as descripc2_0_1_ from solicitud_reembolso solicitudr0_ left outer join estado estado1_ on solicitudr0_.id_estado_reembolso=estado1_.id_estado where solicitudr0_.id_solicitud=?
+2021-10-22 11:34:04,713 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.solicitud.reembolsoservice.model.SolicitudReembolso: select solicitudr0_.id_solicitud as id_solic1_2_0_, solicitudr0_.id_estado_reembolso as id_estad3_2_0_, solicitudr0_.fecha_solicitud as fecha_so2_2_0_, solicitudr0_.id_usuario as id_usuar4_2_0_, solicitudr0_.observacion as observac5_2_0_ from solicitud_reembolso solicitudr0_ where solicitudr0_.id_solicitud=?
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.solicitud.reembolsoservice.model.SolicitudReembolso: select solicitudr0_.id_solicitud as id_solic1_2_0_, solicitudr0_.id_estado_reembolso as id_estad3_2_0_, solicitudr0_.fecha_solicitud as fecha_so2_2_0_, solicitudr0_.id_usuario as id_usuar4_2_0_, solicitudr0_.observacion as observac5_2_0_ from solicitud_reembolso solicitudr0_ where solicitudr0_.id_solicitud=?
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.solicitud.reembolsoservice.model.Estado
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_estado from estado where id_estado =?
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select estado_.id_estado, estado_.descripcion as descripc2_0_ from estado estado_ where estado_.id_estado=?
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into estado (descripcion, id_estado) values (?, ?)
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update estado set descripcion=? where id_estado=?
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from estado where id_estado=?
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a5cfdac]
+2021-10-22 11:34:04,714 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.solicitud.reembolsoservice.model.Estado)
+    - Returns
+       - EntityReturnImpl(entity=cl.solicitud.reembolsoservice.model.Estado, querySpaceUid=<gen:0>, path=cl.solicitud.reembolsoservice.model.Estado)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.solicitud.reembolsoservice.model.Estado)
+          - SQL table alias mapping - estado0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_estad1_0_0_}
+
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.solicitud.reembolsoservice.model.Estado [NONE]: select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c8c8e95]
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : descripcion
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:34:04,715 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.solicitud.reembolsoservice.model.Estado)
+    - Returns
+       - EntityReturnImpl(entity=cl.solicitud.reembolsoservice.model.Estado, querySpaceUid=<gen:0>, path=cl.solicitud.reembolsoservice.model.Estado)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.solicitud.reembolsoservice.model.Estado)
+          - SQL table alias mapping - estado0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_estad1_0_0_}
+
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.solicitud.reembolsoservice.model.Estado [READ]: select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.solicitud.reembolsoservice.model.Estado: select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.solicitud.reembolsoservice.model.Estado: select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.solicitud.reembolsoservice.model.LogReembolsoEntity
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id_log from log_reembolso where id_log =?
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select logreembol_.id_log, logreembol_.fecha as fecha2_1_, logreembol_.hora_log as hora_log3_1_, logreembol_.id_boleta as id_bolet4_1_, logreembol_.id_solicitud as id_solic5_1_, logreembol_.log_antes as log_ante6_1_, logreembol_.log_despues as log_desp7_1_, logreembol_.usuario as usuario8_1_ from log_reembolso logreembol_ where logreembol_.id_log=?
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into log_reembolso (fecha, hora_log, id_boleta, id_solicitud, log_antes, log_despues, usuario, id_log) values (?, ?, ?, ?, ?, ?, ?, ?)
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update log_reembolso set fecha=?, hora_log=?, id_boleta=?, id_solicitud=?, log_antes=?, log_despues=?, usuario=? where id_log=?
+2021-10-22 11:34:04,716 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from log_reembolso where id_log=?
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@42c529ad]
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fecha
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : horaLog
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idBoleta
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idSolicitud
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logAntes
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logDespues
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : usuario
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:34:04,717 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.solicitud.reembolsoservice.model.LogReembolsoEntity)
+    - Returns
+       - EntityReturnImpl(entity=cl.solicitud.reembolsoservice.model.LogReembolsoEntity, querySpaceUid=<gen:0>, path=cl.solicitud.reembolsoservice.model.LogReembolsoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.solicitud.reembolsoservice.model.LogReembolsoEntity)
+          - SQL table alias mapping - logreembol0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_log1_1_0_}
+
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.solicitud.reembolsoservice.model.LogReembolsoEntity [NONE]: select logreembol0_.id_log as id_log1_1_0_, logreembol0_.fecha as fecha2_1_0_, logreembol0_.hora_log as hora_log3_1_0_, logreembol0_.id_boleta as id_bolet4_1_0_, logreembol0_.id_solicitud as id_solic5_1_0_, logreembol0_.log_antes as log_ante6_1_0_, logreembol0_.log_despues as log_desp7_1_0_, logreembol0_.usuario as usuario8_1_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@414c90ff]
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fecha
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : horaLog
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idBoleta
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idSolicitud
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logAntes
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : logDespues
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : usuario
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-22 11:34:04,718 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.solicitud.reembolsoservice.model.LogReembolsoEntity)
+    - Returns
+       - EntityReturnImpl(entity=cl.solicitud.reembolsoservice.model.LogReembolsoEntity, querySpaceUid=<gen:0>, path=cl.solicitud.reembolsoservice.model.LogReembolsoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.solicitud.reembolsoservice.model.LogReembolsoEntity)
+          - SQL table alias mapping - logreembol0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_log1_1_0_}
+
+2021-10-22 11:34:04,719 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.solicitud.reembolsoservice.model.LogReembolsoEntity [READ]: select logreembol0_.id_log as id_log1_1_0_, logreembol0_.fecha as fecha2_1_0_, logreembol0_.hora_log as hora_log3_1_0_, logreembol0_.id_boleta as id_bolet4_1_0_, logreembol0_.id_solicitud as id_solic5_1_0_, logreembol0_.log_antes as log_ante6_1_0_, logreembol0_.log_despues as log_desp7_1_0_, logreembol0_.usuario as usuario8_1_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 11:34:04,719 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.solicitud.reembolsoservice.model.LogReembolsoEntity: select logreembol0_.id_log as id_log1_1_0_, logreembol0_.fecha as fecha2_1_0_, logreembol0_.hora_log as hora_log3_1_0_, logreembol0_.id_boleta as id_bolet4_1_0_, logreembol0_.id_solicitud as id_solic5_1_0_, logreembol0_.log_antes as log_ante6_1_0_, logreembol0_.log_despues as log_desp7_1_0_, logreembol0_.usuario as usuario8_1_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 11:34:04,719 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.solicitud.reembolsoservice.model.LogReembolsoEntity: select logreembol0_.id_log as id_log1_1_0_, logreembol0_.fecha as fecha2_1_0_, logreembol0_.hora_log as hora_log3_1_0_, logreembol0_.id_boleta as id_bolet4_1_0_, logreembol0_.id_solicitud as id_solic5_1_0_, logreembol0_.log_antes as log_ante6_1_0_, logreembol0_.log_despues as log_desp7_1_0_, logreembol0_.usuario as usuario8_1_0_ from log_reembolso logreembol0_ where logreembol0_.id_log=?
+2021-10-22 11:34:04,741 DEBUG [main] org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator : No actions specified; doing nothing
+2021-10-22 11:34:04,742 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 1 named HQL queries
+2021-10-22 11:34:04,743 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking named query: LogReembolsoEntity.findAll
+2021-10-22 11:34:04,749 DEBUG [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@5913dd8b
+2021-10-22 11:34:04,749 INFO  [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory
+2021-10-22 11:34:04,782 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: SELECT l FROM cl.solicitud.reembolsoservice.model.LogReembolsoEntity l
+2021-10-22 11:34:04,789 DEBUG [main] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:34:04,795 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'solicitud'
+       |     |  |  |  \-[IDENT] Node: 'reembolsoservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'LogReembolsoEntity'
+       |     \-[ALIAS] Node: 'l'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'l'
+
+2021-10-22 11:34:04,820 DEBUG [main] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 11:34:04,833 DEBUG [main] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.solicitud.reembolsoservice.model.LogReembolsoEntity (l) -> logreembol0_
+2021-10-22 11:34:04,834 DEBUG [main] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : l -> logreembol0_.id_log
+2021-10-22 11:34:04,836 DEBUG [main] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 11:34:04,836 DEBUG [main] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} logreembol0_.id_log ) ( FromClause{level=1} log_reembolso logreembol0_ ) )
+2021-10-22 11:34:04,844 DEBUG [main] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [log_reembolso logreembol0_]
+2021-10-22 11:34:04,844 DEBUG [main] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 11:34:04,845 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (log_reembolso)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'logreembol0_.id_log as id_log1_1_' {alias=l, className=cl.solicitud.reembolsoservice.model.LogReembolsoEntity, tableAlias=logreembol0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'logreembol0_.fecha as fecha2_1_, logreembol0_.hora_log as hora_log3_1_, logreembol0_.id_boleta as id_bolet4_1_, logreembol0_.id_solicitud as id_solic5_1_, logreembol0_.log_antes as log_ante6_1_, logreembol0_.log_despues as log_desp7_1_, logreembol0_.usuario as usuario8_1_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[l], fromElementByTableAlias=[logreembol0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'log_reembolso logreembol0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=l,role=null,tableName=log_reembolso,tableAlias=logreembol0_,origin=null,columns={,className=cl.solicitud.reembolsoservice.model.LogReembolsoEntity}}
+
+2021-10-22 11:34:04,845 DEBUG [main] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:34:04,852 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: SELECT l FROM cl.solicitud.reembolsoservice.model.LogReembolsoEntity l
+2021-10-22 11:34:04,852 DEBUG [main] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select logreembol0_.id_log as id_log1_1_, logreembol0_.fecha as fecha2_1_, logreembol0_.hora_log as hora_log3_1_, logreembol0_.id_boleta as id_bolet4_1_, logreembol0_.id_solicitud as id_solic5_1_, logreembol0_.log_antes as log_ante6_1_, logreembol0_.log_despues as log_desp7_1_, logreembol0_.usuario as usuario8_1_ from log_reembolso logreembol0_
+2021-10-22 11:34:04,852 DEBUG [main] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:34:04,855 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named SQL queries
+2021-10-22 11:34:04,857 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4d4d13a
+2021-10-22 11:34:04,857 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Registering SessionFactory: f13b9b7f-86d3-460a-b163-8a87f9f5ccbd (<unnamed>)
+2021-10-22 11:34:04,858 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Not binding SessionFactory to JNDI, no JNDI name configured
+2021-10-22 11:34:04,858 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 11:34:05,039 DEBUG [main] org.hibernate.stat.internal.StatisticsInitiator : Statistics initialized [enabled=false]
+2021-10-22 11:34:05,228 DEBUG [main] org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-22 11:34:06,184 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-10-22 11:34:06,437 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-10-22 11:34:06,477 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 11:34:06,477 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 11:34:06,477 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-22 11:34:06,483 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-22 11:34:06,483 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-22 11:34:06,484 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-10-22 11:34:06,485 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-10-22 11:34:06,485 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-10-22 11:34:06,486 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-22 11:34:06,486 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2021-10-22 11:34:06,487 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-22 11:34:06,487 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-22 11:34:06,487 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-22 11:34:06,491 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-22 11:34:06,491 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-22 11:34:06,491 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-22 11:34:06,491 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-22 11:34:06,491 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-22 11:34:06,645 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-22 11:34:07,055 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService
+2021-10-22 11:34:07,438 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-10-22 11:34:07,466 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-10-22 11:34:07,507 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-10-22 11:34:07,685 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-10-22 11:34:07,690 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-10-22 11:34:07,692 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-10-22 11:34:07,694 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-10-22 11:34:07,697 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-10-22 11:34:07,699 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-10-22 11:34:07,701 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-10-22 11:34:07,704 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-10-22 11:34:07,706 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-10-22 11:34:07,709 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-10-22 11:34:07,711 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-10-22 11:34:07,713 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-10-22 11:34:07,715 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-10-22 11:34:07,717 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-10-22 11:34:07,719 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-10-22 11:34:07,721 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-10-22 11:34:07,725 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-10-22 11:34:07,727 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-10-22 11:34:07,730 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-10-22 11:34:07,732 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-10-22 11:34:07,734 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2021-10-22 11:34:07,736 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_21
+2021-10-22 11:34:07,886 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 6002 (http) with context path ''
+2021-10-22 11:34:07,889 INFO  [main] cl.solicitud.reembolsoservice.ReembolsoServiceApplication : Started ReembolsoServiceApplication in 14.158 seconds (JVM running for 20.805)
+2021-10-22 11:34:08,002 WARN  [registrationTask1] de.codecentric.boot.admin.client.registration.ApplicationRegistrator : Failed to register application as Application(name=reembolso, managementUrl=http://localhost:6002/actuator, healthUrl=http://localhost:6002/actuator/health, serviceUrl=http://localhost:6002/) at spring-boot-admin ([http://elqui.tecnova.cl:9000/instances]): I/O error on POST request for "http://elqui.tecnova.cl:9000/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2021-10-22 11:34:54,849 INFO  [http-nio-6002-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 11:34:54,849 INFO  [http-nio-6002-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-10-22 11:34:54,875 INFO  [http-nio-6002-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 26 ms
+2021-10-22 11:35:01,631 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-10-22 11:35:01,632 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.transaction.internal.TransactionImpl : begin
+2021-10-22 11:35:01,638 DEBUG [http-nio-6002-exec-3] org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select generatedAlias0 from SolicitudReembolso as generatedAlias0
+2021-10-22 11:35:01,650 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select generatedAlias0 from cl.solicitud.reembolsoservice.model.SolicitudReembolso as generatedAlias0
+2021-10-22 11:35:01,651 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:35:01,651 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'solicitud'
+       |     |  |  |  \-[IDENT] Node: 'reembolsoservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'SolicitudReembolso'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2021-10-22 11:35:01,651 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 11:35:01,651 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.solicitud.reembolsoservice.model.SolicitudReembolso (generatedAlias0) -> solicitudr0_
+2021-10-22 11:35:01,652 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> solicitudr0_.id_solicitud
+2021-10-22 11:35:01,652 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 11:35:01,652 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} solicitudr0_.id_solicitud ) ( FromClause{level=1} solicitud_reembolso solicitudr0_ ) )
+2021-10-22 11:35:01,652 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [solicitud_reembolso solicitudr0_]
+2021-10-22 11:35:01,652 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 11:35:01,652 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (solicitud_reembolso)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'solicitudr0_.id_solicitud as id_solic1_2_' {alias=generatedAlias0, className=cl.solicitud.reembolsoservice.model.SolicitudReembolso, tableAlias=solicitudr0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'solicitudr0_.id_estado_reembolso as id_estad3_2_, solicitudr0_.fecha_solicitud as fecha_so2_2_, solicitudr0_.id_usuario as id_usuar4_2_, solicitudr0_.observacion as observac5_2_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[solicitudr0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'solicitud_reembolso solicitudr0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=solicitud_reembolso,tableAlias=solicitudr0_,origin=null,columns={,className=cl.solicitud.reembolsoservice.model.SolicitudReembolso}}
+
+2021-10-22 11:35:01,653 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:35:01,653 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select generatedAlias0 from cl.solicitud.reembolsoservice.model.SolicitudReembolso as generatedAlias0
+2021-10-22 11:35:01,653 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select solicitudr0_.id_solicitud as id_solic1_2_, solicitudr0_.id_estado_reembolso as id_estad3_2_, solicitudr0_.fecha_solicitud as fecha_so2_2_, solicitudr0_.id_usuario as id_usuar4_2_, solicitudr0_.observacion as observac5_2_ from solicitud_reembolso solicitudr0_
+2021-10-22 11:35:01,653 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:35:01,669 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select solicitudr0_.id_solicitud as id_solic1_2_, solicitudr0_.id_estado_reembolso as id_estad3_2_, solicitudr0_.fecha_solicitud as fecha_so2_2_, solicitudr0_.id_usuario as id_usuar4_2_, solicitudr0_.observacion as observac5_2_ from solicitud_reembolso solicitudr0_ limit ?
+2021-10-22 11:35:01,693 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 0
+2021-10-22 11:35:01,696 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#214]
+2021-10-22 11:35:01,704 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 1
+2021-10-22 11:35:01,704 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#212]
+2021-10-22 11:35:01,704 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 2
+2021-10-22 11:35:01,704 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#210]
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 3
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#215]
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 4
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#216]
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 5
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#217]
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 6
+2021-10-22 11:35:01,705 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#219]
+2021-10-22 11:35:01,706 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 7
+2021-10-22 11:35:01,706 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#209]
+2021-10-22 11:35:01,706 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 8
+2021-10-22 11:35:01,706 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#220]
+2021-10-22 11:35:01,706 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 9
+2021-10-22 11:35:01,706 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#201]
+2021-10-22 11:35:01,707 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 10
+2021-10-22 11:35:01,707 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#176]
+2021-10-22 11:35:01,707 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 11
+2021-10-22 11:35:01,707 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#177]
+2021-10-22 11:35:01,707 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 12
+2021-10-22 11:35:01,707 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#173]
+2021-10-22 11:35:01,708 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 13
+2021-10-22 11:35:01,708 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#207]
+2021-10-22 11:35:01,708 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 14
+2021-10-22 11:35:01,708 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#206]
+2021-10-22 11:35:01,709 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 15
+2021-10-22 11:35:01,709 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#208]
+2021-10-22 11:35:01,709 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 16
+2021-10-22 11:35:01,709 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#211]
+2021-10-22 11:35:01,710 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 17
+2021-10-22 11:35:01,710 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#218]
+2021-10-22 11:35:01,710 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 18
+2021-10-22 11:35:01,710 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#213]
+2021-10-22 11:35:01,710 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 19
+2021-10-22 11:35:01,711 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: EntityKey[cl.solicitud.reembolsoservice.model.SolicitudReembolso#221]
+2021-10-22 11:35:01,712 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#214]
+2021-10-22 11:35:01,715 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,727 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,727 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,728 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#6]
+2021-10-22 11:35:01,729 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#6]
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#6
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#214]
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#212]
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#212]
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#210]
+2021-10-22 11:35:01,730 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#210]
+2021-10-22 11:35:01,731 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#215]
+2021-10-22 11:35:01,731 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,741 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#3]
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#3]
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#3
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#215]
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#216]
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#216]
+2021-10-22 11:35:01,742 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#217]
+2021-10-22 11:35:01,743 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#217]
+2021-10-22 11:35:01,743 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#219]
+2021-10-22 11:35:01,743 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#219]
+2021-10-22 11:35:01,743 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#209]
+2021-10-22 11:35:01,743 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,752 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,752 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#8]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#8]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#8
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#209]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#220]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#220]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#201]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#201]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#176]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#176]
+2021-10-22 11:35:01,753 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#177]
+2021-10-22 11:35:01,754 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#177]
+2021-10-22 11:35:01,754 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#173]
+2021-10-22 11:35:01,754 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#173]
+2021-10-22 11:35:01,754 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#207]
+2021-10-22 11:35:01,754 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,763 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#5]
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#5]
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#5
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#207]
+2021-10-22 11:35:01,764 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#206]
+2021-10-22 11:35:01,765 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,779 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#4]
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#4]
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#4
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#206]
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#208]
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#208]
+2021-10-22 11:35:01,780 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#211]
+2021-10-22 11:35:01,781 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,791 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,791 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,792 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#7]
+2021-10-22 11:35:01,792 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#7]
+2021-10-22 11:35:01,792 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,792 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#7
+2021-10-22 11:35:01,792 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#211]
+2021-10-22 11:35:01,792 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#218]
+2021-10-22 11:35:01,793 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select estado0_.id_estado as id_estad1_0_0_, estado0_.descripcion as descripc2_0_0_ from estado estado0_ where estado0_.id_estado=?
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl : Starting ResultSet row #0
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.Estado#1]
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.Estado#1]
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl : HHH000387: ResultSet's statement was not registered
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader : Done entity load : cl.solicitud.reembolsoservice.model.Estado#1
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#218]
+2021-10-22 11:35:01,815 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#213]
+2021-10-22 11:35:01,816 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#213]
+2021-10-22 11:35:01,816 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Resolving associations for [cl.solicitud.reembolsoservice.model.SolicitudReembolso#221]
+2021-10-22 11:35:01,816 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.internal.TwoPhaseLoad : Done materializing entity [cl.solicitud.reembolsoservice.model.SolicitudReembolso#221]
+2021-10-22 11:35:01,821 DEBUG [http-nio-6002-exec-3] org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select count(generatedAlias0) from SolicitudReembolso as generatedAlias0
+2021-10-22 11:35:01,821 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select count(generatedAlias0) from cl.solicitud.reembolsoservice.model.SolicitudReembolso as generatedAlias0
+2021-10-22 11:35:01,822 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:35:01,823 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'cl'
+       |     |  |  |  |  \-[IDENT] Node: 'solicitud'
+       |     |  |  |  \-[IDENT] Node: 'reembolsoservice'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'SolicitudReembolso'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[COUNT] Node: 'count'
+             \-[IDENT] Node: 'generatedAlias0'
+
+2021-10-22 11:35:01,823 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-10-22 11:35:01,824 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : cl.solicitud.reembolsoservice.model.SolicitudReembolso (generatedAlias0) -> solicitudr0_
+2021-10-22 11:35:01,825 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> solicitudr0_.id_solicitud
+2021-10-22 11:35:01,825 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-10-22 11:35:01,825 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} ( count solicitudr0_.id_solicitud ) ) ( FromClause{level=1} solicitud_reembolso solicitudr0_ ) )
+2021-10-22 11:35:01,826 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [solicitud_reembolso solicitudr0_]
+2021-10-22 11:35:01,826 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-10-22 11:35:01,826 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (solicitud_reembolso)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'count'
+    |  |  \-[ALIAS_REF] IdentNode: 'solicitudr0_.id_solicitud' {alias=generatedAlias0, className=cl.solicitud.reembolsoservice.model.SolicitudReembolso, tableAlias=solicitudr0_}
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[solicitudr0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'solicitud_reembolso solicitudr0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=solicitud_reembolso,tableAlias=solicitudr0_,origin=null,columns={,className=cl.solicitud.reembolsoservice.model.SolicitudReembolso}}
+
+2021-10-22 11:35:01,826 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:35:01,826 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select count(generatedAlias0) from cl.solicitud.reembolsoservice.model.SolicitudReembolso as generatedAlias0
+2021-10-22 11:35:01,826 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select count(solicitudr0_.id_solicitud) as col_0_0_ from solicitud_reembolso solicitudr0_
+2021-10-22 11:35:01,827 DEBUG [http-nio-6002-exec-3] org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-10-22 11:35:01,827 DEBUG [http-nio-6002-exec-3] org.hibernate.SQL : select count(solicitudr0_.id_solicitud) as col_0_0_ from solicitud_reembolso solicitudr0_
+2021-10-22 11:35:01,837 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result set row: 0
+2021-10-22 11:35:01,837 DEBUG [http-nio-6002-exec-3] org.hibernate.loader.Loader : Result row: 
+2021-10-22 11:35:01,840 DEBUG [http-nio-6002-exec-3] org.hibernate.engine.transaction.internal.TransactionImpl : committing
+2021-10-22 11:36:30,931 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService
+2021-10-22 11:36:30,932 INFO  [Thread-7] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-22 11:36:30,936 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 11:36:30,937 DEBUG [Thread-7] org.hibernate.internal.SessionFactoryImpl : HHH000031: Closing
+2021-10-22 11:36:30,937 DEBUG [Thread-7] org.hibernate.type.spi.TypeConfiguration$Scope : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5a7811d0] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@738578ba]
+2021-10-22 11:36:30,938 DEBUG [Thread-7] org.hibernate.service.internal.AbstractServiceRegistryImpl : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2021-10-22 11:36:30,938 DEBUG [Thread-7] org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2021-10-22 11:36:30,939 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-10-22 11:36:30,943 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
