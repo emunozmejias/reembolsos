@@ -10,7 +10,7 @@ spring:
 # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://des1081.tecnova.cl:5432/horarios_desa?createDatabaseIfNotExist=true;characterEncoding=UTF-8
+    url: jdbc:postgresql://10.128.2.18:5432/horarios_desa?createDatabaseIfNotExist=true;characterEncoding=UTF-8
     username: hordesa
     password: Cusquena
     tomcat:
