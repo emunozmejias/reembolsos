@@ -10,7 +10,7 @@ spring:
 # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://des1081.tecnova.cl:5432/apirest?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://reembolsosdb:5432/apirest?createDatabaseIfNotExist=true
     username: apirest
     password: Tatio2019
     tomcat:
