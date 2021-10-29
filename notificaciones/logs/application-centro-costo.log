@@ -1,0 +1,453 @@
+2021-10-29 15:42:21,438 INFO  [main] cl.tecnova.notificaciones.service.NotificacionesApplication : Starting NotificacionesApplication on MacBook-Pro-de-Elizabeth.local with PID 7314 (/Users/emunozmejias/GIT-REPOS/reembolsos/notificaciones/target/classes started by emunozmejias in /Users/emunozmejias/GIT-REPOS/reembolsos/notificaciones)
+2021-10-29 15:42:21,441 INFO  [main] cl.tecnova.notificaciones.service.NotificacionesApplication : The following profiles are active: dev
+2021-10-29 15:42:22,644 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-29 15:42:22,738 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 1 repository interfaces.
+2021-10-29 15:42:23,237 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11a25bb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-29 15:42:23,270 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9122a8e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-29 15:42:23,667 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 6010 (http)
+2021-10-29 15:42:23,692 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-10-29 15:42:23,693 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-10-29 15:42:23,706 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-29 15:42:23,800 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-10-29 15:42:23,801 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2316 ms
+2021-10-29 15:42:24,929 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpTraceFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'addResponseHeaderFilter' to: [/*]
+2021-10-29 15:42:24,930 INFO  [main] org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2021-10-29 15:42:24,932 INFO  [main] org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-10-29 15:42:25,095 DEBUG [main] org.hibernate.jpa.internal.util.LogHelper : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: java.net.URLClassLoader@f15bebc
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/emunozmejias/GIT-REPOS/reembolsos/notificaciones/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		cl.tecnova.notificaciones.service.model.Notificaciones]
+	Mapping files names []
+	Properties []
+2021-10-29 15:42:25,112 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-10-29 15:42:25,114 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-10-29 15:42:25,118 DEBUG [main] org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-10-29 15:42:25,176 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2021-10-29 15:42:25,178 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2021-10-29 15:42:25,321 DEBUG [main] org.hibernate.service.spi.ServiceBinding : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-10-29 15:42:25,342 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-10-29 15:42:25,343 DEBUG [main] org.hibernate.cache.internal.RegionFactoryInitiator : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-10-29 15:42:25,361 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-29 15:42:25,399 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@28475da9
+2021-10-29 15:42:25,400 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@28475da9
+2021-10-29 15:42:25,400 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@28475da9
+2021-10-29 15:42:25,401 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7892753e
+2021-10-29 15:42:25,402 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration true_false -> org.hibernate.type.TrueFalseType@396b7c9b
+2021-10-29 15:42:25,403 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration yes_no -> org.hibernate.type.YesNoType@674010bb
+2021-10-29 15:42:25,404 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@60ed4998
+2021-10-29 15:42:25,405 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@60ed4998
+2021-10-29 15:42:25,405 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@60ed4998
+2021-10-29 15:42:25,406 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration character -> org.hibernate.type.CharacterType@1685379b
+2021-10-29 15:42:25,407 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char -> org.hibernate.type.CharacterType@1685379b
+2021-10-29 15:42:25,407 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1685379b
+2021-10-29 15:42:25,408 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@6c0e4ba2
+2021-10-29 15:42:25,409 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@6c0e4ba2
+2021-10-29 15:42:25,409 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6c0e4ba2
+2021-10-29 15:42:25,410 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration integer -> org.hibernate.type.IntegerType@70724581
+2021-10-29 15:42:25,411 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration int -> org.hibernate.type.IntegerType@70724581
+2021-10-29 15:42:25,411 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@70724581
+2021-10-29 15:42:25,412 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@4a323d69
+2021-10-29 15:42:25,412 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@4a323d69
+2021-10-29 15:42:25,413 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Long -> org.hibernate.type.LongType@4a323d69
+2021-10-29 15:42:25,414 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@2d6ce218
+2021-10-29 15:42:25,414 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@2d6ce218
+2021-10-29 15:42:25,414 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2d6ce218
+2021-10-29 15:42:25,416 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@1d5fb8c0
+2021-10-29 15:42:25,416 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@1d5fb8c0
+2021-10-29 15:42:25,416 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1d5fb8c0
+2021-10-29 15:42:25,417 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@40e38ae1
+2021-10-29 15:42:25,418 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@40e38ae1
+2021-10-29 15:42:25,419 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@60422e19
+2021-10-29 15:42:25,419 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@60422e19
+2021-10-29 15:42:25,420 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration string -> org.hibernate.type.StringType@613f841f
+2021-10-29 15:42:25,420 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.String -> org.hibernate.type.StringType@613f841f
+2021-10-29 15:42:25,421 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6b22dfdc
+2021-10-29 15:42:25,421 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@64fc6649
+2021-10-29 15:42:25,422 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration url -> org.hibernate.type.UrlType@26e61bbb
+2021-10-29 15:42:25,423 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.net.URL -> org.hibernate.type.UrlType@26e61bbb
+2021-10-29 15:42:25,424 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Duration -> org.hibernate.type.DurationType@44d0d675
+2021-10-29 15:42:25,424 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@44d0d675
+2021-10-29 15:42:25,425 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Instant -> org.hibernate.type.InstantType@776edec4
+2021-10-29 15:42:25,425 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@776edec4
+2021-10-29 15:42:25,426 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@50e2f051
+2021-10-29 15:42:25,427 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@50e2f051
+2021-10-29 15:42:25,428 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7b241ce0
+2021-10-29 15:42:25,428 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7b241ce0
+2021-10-29 15:42:25,430 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1430b306
+2021-10-29 15:42:25,430 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1430b306
+2021-10-29 15:42:25,432 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@29a32232
+2021-10-29 15:42:25,432 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@29a32232
+2021-10-29 15:42:25,433 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@b2ea674
+2021-10-29 15:42:25,434 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@b2ea674
+2021-10-29 15:42:25,437 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@39cd19cc
+2021-10-29 15:42:25,437 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@39cd19cc
+2021-10-29 15:42:25,438 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration date -> org.hibernate.type.DateType@a559b7b
+2021-10-29 15:42:25,439 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Date -> org.hibernate.type.DateType@a559b7b
+2021-10-29 15:42:25,440 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration time -> org.hibernate.type.TimeType@3ef1b002
+2021-10-29 15:42:25,440 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3ef1b002
+2021-10-29 15:42:25,441 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timestamp -> org.hibernate.type.TimestampType@1f038534
+2021-10-29 15:42:25,442 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1f038534
+2021-10-29 15:42:25,442 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1f038534
+2021-10-29 15:42:25,443 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1ada38cb
+2021-10-29 15:42:25,444 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar -> org.hibernate.type.CalendarType@2c7a7329
+2021-10-29 15:42:25,444 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2c7a7329
+2021-10-29 15:42:25,444 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2c7a7329
+2021-10-29 15:42:25,445 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4952a051
+2021-10-29 15:42:25,446 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration locale -> org.hibernate.type.LocaleType@19c169d0
+2021-10-29 15:42:25,447 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@19c169d0
+2021-10-29 15:42:25,448 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration currency -> org.hibernate.type.CurrencyType@3575b33a
+2021-10-29 15:42:25,448 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@3575b33a
+2021-10-29 15:42:25,449 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration timezone -> org.hibernate.type.TimeZoneType@12a9ba92
+2021-10-29 15:42:25,450 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@12a9ba92
+2021-10-29 15:42:25,451 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration class -> org.hibernate.type.ClassType@26c3279c
+2021-10-29 15:42:25,451 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@26c3279c
+2021-10-29 15:42:25,452 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@44787158
+2021-10-29 15:42:25,452 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@44787158
+2021-10-29 15:42:25,452 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@77d0fc1f
+2021-10-29 15:42:25,453 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration binary -> org.hibernate.type.BinaryType@4ee9ffb7
+2021-10-29 15:42:25,453 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration byte[] -> org.hibernate.type.BinaryType@4ee9ffb7
+2021-10-29 15:42:25,453 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [B -> org.hibernate.type.BinaryType@4ee9ffb7
+2021-10-29 15:42:25,458 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@c05d81c
+2021-10-29 15:42:25,459 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@c05d81c
+2021-10-29 15:42:25,459 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@c05d81c
+2021-10-29 15:42:25,460 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration row_version -> org.hibernate.type.RowVersionType@500ef29
+2021-10-29 15:42:25,461 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration image -> org.hibernate.type.ImageType@6e704582
+2021-10-29 15:42:25,462 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration characters -> org.hibernate.type.CharArrayType@3d9b7276
+2021-10-29 15:42:25,462 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration char[] -> org.hibernate.type.CharArrayType@3d9b7276
+2021-10-29 15:42:25,462 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [C -> org.hibernate.type.CharArrayType@3d9b7276
+2021-10-29 15:42:25,464 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4ed6699b
+2021-10-29 15:42:25,464 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4ed6699b
+2021-10-29 15:42:25,464 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4ed6699b
+2021-10-29 15:42:25,464 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration text -> org.hibernate.type.TextType@6dae63e5
+2021-10-29 15:42:25,465 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration ntext -> org.hibernate.type.NTextType@5708d973
+2021-10-29 15:42:25,467 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration blob -> org.hibernate.type.BlobType@64b60754
+2021-10-29 15:42:25,467 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@64b60754
+2021-10-29 15:42:25,468 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@526db166
+2021-10-29 15:42:25,469 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration clob -> org.hibernate.type.ClobType@33d27dec
+2021-10-29 15:42:25,470 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@33d27dec
+2021-10-29 15:42:25,471 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration nclob -> org.hibernate.type.NClobType@2531e9c8
+2021-10-29 15:42:25,472 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2531e9c8
+2021-10-29 15:42:25,472 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5a210415
+2021-10-29 15:42:25,473 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3b5a7ee0
+2021-10-29 15:42:25,474 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration serializable -> org.hibernate.type.SerializableType@7a425a78
+2021-10-29 15:42:25,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration object -> org.hibernate.type.ObjectType@236621dd
+2021-10-29 15:42:25,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@236621dd
+2021-10-29 15:42:25,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@2dc87cf6
+2021-10-29 15:42:25,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3f32c85b
+2021-10-29 15:42:25,478 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@57c91eee
+2021-10-29 15:42:25,479 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2f7231d8
+2021-10-29 15:42:25,479 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@41b3d70c
+2021-10-29 15:42:25,479 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@686aaf71
+2021-10-29 15:42:25,479 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@774bf2fc
+2021-10-29 15:42:25,479 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4909f13c
+2021-10-29 15:42:25,493 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7c32ff47] into BootstrapContext; was [null]
+2021-10-29 15:42:25,493 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7c32ff47) [was null]
+2021-10-29 15:42:25,494 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@36b384b2] into BootstrapContext; was [null]
+2021-10-29 15:42:25,494 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@5d908de4] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@305652c4]
+2021-10-29 15:42:25,557 DEBUG [main] org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7c32ff47]
+2021-10-29 15:42:25,557 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7c32ff47]
+2021-10-29 15:42:25,572 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-10-29 15:42:25,572 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-10-29 15:42:25,573 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-29 15:42:25,573 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-10-29 15:42:25,573 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-10-29 15:42:25,574 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-10-29 15:42:25,575 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-10-29 15:42:25,578 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-29 15:42:25,579 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-10-29 15:42:25,580 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-10-29 15:42:25,581 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-10-29 15:42:25,581 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-10-29 15:42:25,581 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-10-29 15:42:25,582 DEBUG [main] org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-10-29 15:42:25,591 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-10-29 15:42:26,650 ERROR [main] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:292)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cl.tecnova.notificaciones.service.NotificacionesApplication.main(NotificacionesApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.UnknownHostException: reembolsosdb
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 56 common frames omitted
+2021-10-29 15:42:26,652 WARN  [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : HHH000342: Could not obtain connection to query metadata : El intento de conexión falló.
+2021-10-29 15:42:26,669 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-29 15:42:26,682 DEBUG [main] org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder : IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2021-10-29 15:42:26,687 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2021-10-29 15:42:26,690 DEBUG [main] org.hibernate.boot.model.relational.Namespace : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-10-29 15:42:26,692 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@6c12c1cc
+2021-10-29 15:42:26,692 DEBUG [main] org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@6c12c1cc
+2021-10-29 15:42:26,692 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@44787158
+2021-10-29 15:42:26,693 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@159d5742] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@392d5294]
+2021-10-29 15:42:26,738 DEBUG [main] org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: cl.tecnova.notificaciones.service.model.Notificaciones
+2021-10-29 15:42:26,755 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-10-29 15:42:26,760 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Import with entity name Notificaciones
+2021-10-29 15:42:26,765 DEBUG [main] org.hibernate.cfg.annotations.EntityBinder : Bind entity cl.tecnova.notificaciones.service.model.Notificaciones on table notificaciones
+2021-10-29 15:42:26,782 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notificaciones), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-10-29 15:42:26,785 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-10-29 15:42:26,787 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.notificaciones.service.model.Notificaciones:id]
+2021-10-29 15:42:26,789 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-10-29 15:42:26,790 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-10-29 15:42:26,794 DEBUG [main] org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, sequence_notificaciones, ...)
+2021-10-29 15:42:26,796 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notificaciones), mappingColumn=fecha_token, insertable=true, updatable=true, unique=false}
+2021-10-29 15:42:26,796 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property fechaToken with lazy=false
+2021-10-29 15:42:26,796 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.notificaciones.service.model.Notificaciones:fechaToken]
+2021-10-29 15:42:26,796 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for fechaToken
+2021-10-29 15:42:26,796 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property fechaToken
+2021-10-29 15:42:26,797 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notificaciones), mappingColumn=id_usuario, insertable=true, updatable=true, unique=false}
+2021-10-29 15:42:26,797 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property idUsuario with lazy=false
+2021-10-29 15:42:26,797 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.notificaciones.service.model.Notificaciones:idUsuario]
+2021-10-29 15:42:26,797 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for idUsuario
+2021-10-29 15:42:26,797 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property idUsuario
+2021-10-29 15:42:26,797 DEBUG [main] org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(notificaciones), mappingColumn=token, insertable=true, updatable=true, unique=false}
+2021-10-29 15:42:26,798 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property token with lazy=false
+2021-10-29 15:42:26,798 DEBUG [main] org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [cl.tecnova.notificaciones.service.model.Notificaciones:token]
+2021-10-29 15:42:26,798 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for token
+2021-10-29 15:42:26,798 DEBUG [main] org.hibernate.cfg.annotations.PropertyBinder : Building property token
+2021-10-29 15:42:26,800 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-10-29 15:42:26,800 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for fechaToken
+2021-10-29 15:42:26,800 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for idUsuario
+2021-10-29 15:42:26,800 DEBUG [main] org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for token
+2021-10-29 15:42:26,802 DEBUG [main] org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [notificaciones]
+2021-10-29 15:42:26,836 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Building session factory
+2021-10-29 15:42:26,836 DEBUG [main] org.hibernate.cfg.Settings : SessionFactory name : null
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Automatic flush during beforeCompletion(): enabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Automatic session close at end of transaction: disabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Statistics: disabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Deleted entity synthetic identifier rollback: disabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Default entity-mode: pojo
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Allow initialization of lazy state outside session : disabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Using BatchFetchStyle : LEGACY
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Default batch fetch size: -1
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Maximum outer join fetch depth: null
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Default null ordering: NONE
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Order SQL updates by primary key: disabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Order SQL inserts for batching: disabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : multi-tenancy strategy : NONE
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : JTA Track by Thread: enabled
+2021-10-29 15:42:26,837 DEBUG [main] org.hibernate.cfg.Settings : Query language substitutions: {}
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Named query checking : enabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Second-level query cache factory: null
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache region prefix: null
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Optimize second-level cache for minimal puts: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Structured second-level cache entries: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Second-level cache direct-reference entries: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Automatic eviction of collection cache: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch size: 0
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : JDBC batch updates for versioned data: enabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Scrollable result sets: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Wrap result sets: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : JDBC3 getGeneratedKeys(): disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : JDBC result set fetch size: null
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Connection release mode: ON_CLOSE
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : Generate SQL with comments: disabled
+2021-10-29 15:42:26,838 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - query : 
+2021-10-29 15:42:26,839 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - closed-handling : 
+2021-10-29 15:42:26,839 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - lists : 
+2021-10-29 15:42:26,839 DEBUG [main] org.hibernate.cfg.Settings : JPA compliance - transactions : 
+2021-10-29 15:42:26,893 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Session factory constructed with filter configurations : {}
+2021-10-29 15:42:26,893 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@45c92432, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=America/Santiago, user.country.format=CL, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=ES, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -B spring-boot:run, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@664650a0, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, javax.persistence.sharedCache.mode=UNSPECIFIED, maven.home=/Users/emunozmejias/GIT-REPOS/reembolsos/notificaciones/EMBEDDED, sun.cpu.endian=little, user.home=/Users/emunozmejias, user.language=es, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=1.8.0_121-b13, user.name=emunozmejias, path.separator=:, os.version=10.16, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, FILE_LOG_PATTERN=%d %-5level [%thread] %logger : %msg%n, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/application-centro-costo.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/, catalina.home=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.4364521696244264194.6010, java.version=1.8.0_121, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/emunozmejias/GIT-REPOS/reembolsos/notificaciones, os.arch=x86_64, maven.multiModuleProjectDirectory=/Users/emunozmejias/GIT-REPOS/reembolsos/notificaciones, PID=7314, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/10/_lc9z_9x0cx_7jvs3tmnmjl00000gn/T/tomcat.4364521696244264194.6010, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@30ddd7a4, java.library.path=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.121-b13, classworlds.conf=/Users/emunozmejias/eclipse-workspace-reembolso/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6201417848967280648.tmp, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (null), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/emunozmejias/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, CONSOLE_LOG_PATTERN=%d %-5level %logger : %msg%n}
+2021-10-29 15:42:26,906 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-29 15:42:26,906 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-29 15:42:26,907 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-29 15:42:26,907 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-29 15:42:26,907 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-29 15:42:26,907 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-29 15:42:26,911 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-29 15:42:26,911 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-29 15:42:26,911 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-29 15:42:26,911 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-29 15:42:26,911 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-29 15:42:26,911 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-29 15:42:26,912 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.notificaciones.service.model.Notificaciones] is safe
+2021-10-29 15:42:26,913 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.notificaciones.service.model.Notificaciones
+2021-10-29 15:42:26,943 DEBUG [main] org.hibernate.secure.spi.JaccIntegrator : Skipping JACC integration as it was not enabled
+2021-10-29 15:42:26,943 DEBUG [main] org.hibernate.internal.SessionFactoryImpl : Instantiated session factory
+2021-10-29 15:42:26,944 DEBUG [main] org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@159d5742] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@446c6ebe]
+2021-10-29 15:42:26,975 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.notificaciones.service.model.Notificaciones] is safe
+2021-10-29 15:42:26,975 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.notificaciones.service.model.Notificaciones
+2021-10-29 15:42:26,987 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [cl.tecnova.notificaciones.service.model.Notificaciones] is safe
+2021-10-29 15:42:26,987 DEBUG [main] org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cl.tecnova.notificaciones.service.model.Notificaciones
+2021-10-29 15:42:27,154 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: cl.tecnova.notificaciones.service.model.Notificaciones
+2021-10-29 15:42:27,155 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from notificaciones where id =?
+2021-10-29 15:42:27,155 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select notificaci_.id, notificaci_.fecha_token as fecha_to2_0_, notificaci_.id_usuario as id_usuar3_0_, notificaci_.token as token4_0_ from notificaciones notificaci_ where notificaci_.id=?
+2021-10-29 15:42:27,155 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into notificaciones (fecha_token, id_usuario, token, id) values (?, ?, ?, ?)
+2021-10-29 15:42:27,155 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update notificaciones set fecha_token=?, id_usuario=?, token=? where id=?
+2021-10-29 15:42:27,155 DEBUG [main] org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from notificaciones where id=?
+2021-10-29 15:42:27,179 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c5a0f30]
+2021-10-29 15:42:27,180 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaToken
+2021-10-29 15:42:27,180 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-29 15:42:27,180 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : token
+2021-10-29 15:42:27,181 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-29 15:42:27,190 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-29 15:42:27,194 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.notificaciones.service.model.Notificaciones)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.notificaciones.service.model.Notificaciones, querySpaceUid=<gen:0>, path=cl.tecnova.notificaciones.service.model.Notificaciones)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.notificaciones.service.model.Notificaciones)
+          - SQL table alias mapping - notificaci0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.notificaciones.service.model.Notificaciones [NONE]: select notificaci0_.id as id1_0_0_, notificaci0_.fecha_token as fecha_to2_0_0_, notificaci0_.id_usuario as id_usuar3_0_0_, notificaci0_.token as token4_0_0_ from notificaciones notificaci0_ where notificaci0_.id=?
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@489e1ea8]
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : fechaToken
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : idUsuario
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : token
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-10-29 15:42:27,196 DEBUG [main] org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=cl.tecnova.notificaciones.service.model.Notificaciones)
+    - Returns
+       - EntityReturnImpl(entity=cl.tecnova.notificaciones.service.model.Notificaciones, querySpaceUid=<gen:0>, path=cl.tecnova.notificaciones.service.model.Notificaciones)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cl.tecnova.notificaciones.service.model.Notificaciones)
+          - SQL table alias mapping - notificaci0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-10-29 15:42:27,197 DEBUG [main] org.hibernate.loader.entity.plan.EntityLoader : Static select for entity cl.tecnova.notificaciones.service.model.Notificaciones [READ]: select notificaci0_.id as id1_0_0_, notificaci0_.fecha_token as fecha_to2_0_0_, notificaci0_.id_usuario as id_usuar3_0_0_, notificaci0_.token as token4_0_0_ from notificaciones notificaci0_ where notificaci0_.id=?
+2021-10-29 15:42:27,210 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_MERGE on entity cl.tecnova.notificaciones.service.model.Notificaciones: select notificaci0_.id as id1_0_0_, notificaci0_.fecha_token as fecha_to2_0_0_, notificaci0_.id_usuario as id_usuar3_0_0_, notificaci0_.token as token4_0_0_ from notificaciones notificaci0_ where notificaci0_.id=?
+2021-10-29 15:42:27,210 DEBUG [main] org.hibernate.loader.Loader : Static select for action ACTION_REFRESH on entity cl.tecnova.notificaciones.service.model.Notificaciones: select notificaci0_.id as id1_0_0_, notificaci0_.fecha_token as fecha_to2_0_0_, notificaci0_.id_usuario as id_usuar3_0_0_, notificaci0_.token as token4_0_0_ from notificaciones notificaci0_ where notificaci0_.id=?
+2021-10-29 15:42:27,228 DEBUG [main] org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator : No actions specified; doing nothing
+2021-10-29 15:42:27,228 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named HQL queries
+2021-10-29 15:42:27,229 DEBUG [main] org.hibernate.query.spi.NamedQueryRepository : Checking 0 named SQL queries
+2021-10-29 15:42:27,230 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@237a7d1
+2021-10-29 15:42:27,230 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Registering SessionFactory: 947bd15d-86e5-4603-a293-4c12b9a25a7a (<unnamed>)
+2021-10-29 15:42:27,230 DEBUG [main] org.hibernate.internal.SessionFactoryRegistry : Not binding SessionFactory to JNDI, no JNDI name configured
+2021-10-29 15:42:27,230 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-29 15:42:27,393 DEBUG [main] org.hibernate.stat.internal.StatisticsInitiator : Statistics initialized [enabled=false]
+2021-10-29 15:42:28,273 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-10-29 15:42:28,520 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-10-29 15:42:28,557 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-29 15:42:28,557 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-29 15:42:28,557 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-10-29 15:42:28,562 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2021-10-29 15:42:28,562 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2021-10-29 15:42:28,563 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2021-10-29 15:42:28,564 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2021-10-29 15:42:28,564 DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2021-10-29 15:42:28,565 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2021-10-29 15:42:28,565 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2021-10-29 15:42:28,565 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2021-10-29 15:42:28,565 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2021-10-29 15:42:28,566 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2021-10-29 15:42:28,569 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2021-10-29 15:42:28,569 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2021-10-29 15:42:28,569 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2021-10-29 15:42:28,569 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2021-10-29 15:42:28,569 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryImpl : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2021-10-29 15:42:28,714 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-29 15:42:29,134 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService
+2021-10-29 15:42:29,516 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-10-29 15:42:29,537 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-10-29 15:42:29,571 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-10-29 15:42:29,754 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-10-29 15:42:29,756 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-10-29 15:42:29,760 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-10-29 15:42:29,763 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-10-29 15:42:29,766 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-10-29 15:42:29,769 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-10-29 15:42:29,772 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-10-29 15:42:29,774 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-10-29 15:42:29,776 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-10-29 15:42:29,780 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-10-29 15:42:29,782 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-10-29 15:42:29,785 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-10-29 15:42:29,787 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-10-29 15:42:29,790 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-10-29 15:42:29,792 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-10-29 15:42:29,794 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-10-29 15:42:29,799 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-10-29 15:42:29,801 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-10-29 15:42:29,804 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-10-29 15:42:29,806 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-10-29 15:42:29,808 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2021-10-29 15:42:29,812 INFO  [main] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_21
+2021-10-29 15:42:29,871 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 6010 (http) with context path ''
+2021-10-29 15:42:29,875 INFO  [main] cl.tecnova.notificaciones.service.NotificacionesApplication : Started NotificacionesApplication in 9.058 seconds (JVM running for 13.743)
+2021-10-29 15:42:34,977 WARN  [registrationTask1] de.codecentric.boot.admin.client.registration.ApplicationRegistrator : Failed to register application as Application(name=notificaciones, managementUrl=http://localhost:6010/actuator, healthUrl=http://localhost:6010/actuator/health, serviceUrl=http://localhost:6010/) at spring-boot-admin ([http://elqui.tecnova.cl:9000/instances]): I/O error on POST request for "http://elqui.tecnova.cl:9000/instances": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out. Further attempts are logged on DEBUG level
+2021-10-29 15:42:37,412 INFO  [Thread-6] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService
+2021-10-29 15:42:37,412 INFO  [Thread-6] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-29 15:42:37,416 INFO  [Thread-6] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-29 15:42:37,416 DEBUG [Thread-6] org.hibernate.internal.SessionFactoryImpl : HHH000031: Closing
+2021-10-29 15:42:37,416 DEBUG [Thread-6] org.hibernate.type.spi.TypeConfiguration$Scope : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@bfe76b0] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@446c6ebe]
+2021-10-29 15:42:37,418 DEBUG [Thread-6] org.hibernate.service.internal.AbstractServiceRegistryImpl : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2021-10-29 15:42:37,418 DEBUG [Thread-6] org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

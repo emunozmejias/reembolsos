@@ -1,7 +1,7 @@
 # Spring Boot configuration
 spring:
   profiles:
-    active: prod
+    active: dev
 ---
 spring:
   application:
@@ -10,7 +10,7 @@ spring:
 # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://maqui.tecnova.cl:5432/apirest?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://reembolsosdb:5432/apirest?createDatabaseIfNotExist=true
     username: apirest
     password: Tatio2019
     tomcat:
@@ -111,7 +111,7 @@ management:
       show-details: ALWAYS
 
 properties:
-  url.obtieneUsuariosByIds: http://localhost:6006/api/usuario/obtieneUsuariosByIds/
+  url.obtieneUsuariosByIds: http://eembolsos-usuarios:6006/api/usuario/obtieneUsuariosByIds/
   notificar.tipo1.estados: 3,9
   notificar.tipo1.privilegio: Administracion
   notificar.tipo1.asunto: "[REEMBOLSO]: Revisar Ingreso de Reembolso"
