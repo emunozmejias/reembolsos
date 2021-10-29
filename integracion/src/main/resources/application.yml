@@ -100,18 +100,18 @@ management:
     health:
       show-details: ALWAYS
 properties:
-  url.keycloack: http://192.168.30.188:8888/auth/realms/sample/protocol/openid-connect/token
+  url.keycloack: https://auth.tecnova.cl/auth/realms/tecnova/protocol/openid-connect/token
   client.id: cduran2
   client.secret: 7045ec5d-1dd7-44b8-9c2f-84ec9f766c9d
   grant.type: password
-  url.obtieneUsuarioByIdUsuario: http://localhost:6006/api/usuario/obtieneUsuarioByIdUsuario/
-  url.obtieneSolicitudesByFiltro: http://localhost:6002/api/solicitud/obtieneSolicitudesByFiltro
-  url.obtieneProyectoByIdProyecto: http://localhost:6005/api/proyecto/obtieneProyectoByIdProyecto/
-  url.obtieneBoletaSolicitud: http://localhost:6001/api/boleta/obtieneBoletaSolicitud/
-  url.obtieneBoletaEliminadaSolicitud: http://localhost:6001/api/boleta/obtieneBoletaEliminadaSolicitud/
-  url.obtieneHistorialSolicitud: http://localhost:6002/api/solicitud/obtieneHistorialSolicitud/
-  url.obtieneAllEstados: http://localhost:6003/api/datosTipo/obtieneAllEstados
-  url.obtieneToken: http://localhost:6010/api/notificaciones/obtieneToken/
+  url.obtieneUsuarioByIdUsuario: http://reembolsos-usuarios:6006/api/usuario/obtieneUsuarioByIdUsuario/
+  url.obtieneSolicitudesByFiltro: http://reembolsos-solicitudreembolso:6002/api/solicitud/obtieneSolicitudesByFiltro
+  url.obtieneProyectoByIdProyecto: http://reembolsos-proyecto:6005/api/proyecto/obtieneProyectoByIdProyecto/
+  url.obtieneBoletaSolicitud: http://reembolsos-boleta:6001/api/boleta/obtieneBoletaSolicitud/
+  url.obtieneBoletaEliminadaSolicitud: http://reembolsos-boleta:6001/api/boleta/obtieneBoletaEliminadaSolicitud/
+  url.obtieneHistorialSolicitud: http://reembolsos-solicitudreembolso:6002/api/solicitud/obtieneHistorialSolicitud/
+  url.obtieneAllEstados: http://reembolsos-datostipo:6003/api/datosTipo/obtieneAllEstados
+  url.obtieneToken: http://reembolso-notificaciones:6010/api/notificaciones/obtieneToken/
   url.enviarNotificacion: https://fcm.googleapis.com/fcm/send  
   landing_page: listarendiciones
   price: 1334

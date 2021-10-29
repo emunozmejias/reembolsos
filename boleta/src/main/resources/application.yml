@@ -102,4 +102,4 @@ management:
       show-details: ALWAYS     
 
 properties:
-  url.obtenerParametros: http://localhost:6003/api/datosTipo/obtenerParametros/
+  url.obtenerParametros: http://reembolsos-datostipo:6003/api/datosTipo/obtenerParametros/
